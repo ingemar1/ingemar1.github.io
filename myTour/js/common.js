@@ -5,7 +5,7 @@ $(document).ready(function(){
 	  if (!state.id) {
 	    return state.text;
 	  }
-	  var baseUrl = "/img/flags";
+	  var baseUrl = "img/flags";
 	  var $state = $(
 	    '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
 	  );
