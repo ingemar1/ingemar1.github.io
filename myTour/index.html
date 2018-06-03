@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-12">
+					<a class="header__logo" href="/"><img src="img/logo.jpg" alt=""></a>
+					<ul class="header__menu clearfix">
+						<li><a href="#">Моя лента</a></li>
+						<li><a class="active-item" href="#">Интересы</a></li>
+						<li><a href="#">Направления</a></li>
+						<li><a href="#">Подбор тура</a></li>
+						<li><a href="#">Заявка</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="interests-settings">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<h1 class="settings__title">Настройки интересов</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<div class="filter shadow">
+						<ul class="filter__tabs clearfix">
+							<li><a class="underline" href="#">ПОДБОРКА ВАСИ</a></li>
+							<li><a class="underline active-item" href="#">ПОДБОРКА 123</a></li>
+							<li><a class="underline" href="#">ТУРЦИЯ 20.03</a></li>
+							<li><a class="underline" href="#">ПОДБОРКА #1</a></li>
+							<li><button class="tabs-btn btn"><span class="icon-plus"></span>ДОБАВИТЬ ПОДБОРКУ</button></li>
+						</ul>
+						<div class="filter__selection">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mr-xl-3">
+									<p class="filter__description">Название подборки</p>
+									<div class="border2radius filter__field filter__field-name">ПОДБОРКА 123</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+									<div class="filter__list-city">
+										<p class="filter__description">Ваш город</p>
+										<select class="js-city" name="" id="" style="width: 227px;">
+											<option value="MS">Москва</option>
+											<option value="Spb" selected>Санкт-Петербург</option>
+											<option value="EK">Екатеренбург</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-4 ml-auto">
+									<button class="btn2 btn border2radius float-right">СМОТРЕТЬ РЕЗУЛЬТАТЫ <span class="icon-arrow"></span></button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 mt-4 mb-4">
+									<p class="filter__description">Вы можете задать несколько стран или регионов для одной подборки</p>
+									<div class="border2radius filter__field">
+										<p class="filter__country">Юго-Восточная Азия</p>
+										<select name="" id="" class="js-country" multiple="multiple" style="width: 100%;">
+											<option value="Thailand">Таиланд</option>
+											<option value="Vietnam" selected>Вьетнам</option>
+											<option value="Indonesia">Индонезия</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<button class="btn3 btn border14radius">ДОБАВИТЬ РЕГИОН</button>
+									<button class="btn4 btn border14radius">ДОБАВИТЬ СТРАНЫ</button>
+								</div>
+							</div>
+							<div class="row no-gutters mt-4">
+								<div class="col-12 clearfix">
+									<div class="float-left filter__col1">
+										<p class="filter__description">Даты вылета</p>
+										<input type='text' data-range="true" data-multiple-dates="2" data-multiple-dates-separator=" - " class="js-datepicker datepicker-here filter__field filter__col filter__datepicker borderLeft2Radius" data-position="right top" />
+									</div>
+									<div class="float-left filter__col2">
+										<p class="filter__description">На сколько</p>
+										<div id="js-filter__nights" class="filter__field filter__col filter__border filter__select2-field filter__nights">
+											<div class="filter__nights__value">7 — 14 ночей</div>
+											<div class="dropdown dropdown-nights">
+												<div class="filter__nights__numbers">
+													<div>1</div><div class="start">2</div><div class="selected">3</div><div class="selected">4</div><div class="end">5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+												</div>
+												<a id="js-close3" href="#">Закрыть</a>
+											</div>
+										</div>
+									</div>
+									<div class="float-left filter__col3">
+										<p class="filter__description">Количество гостей</p>
+										<div id="js-filter__quantity" class="filter__field filter__col filter__border dropdown-wrap filter__border-left">
+											<div class="filter__quantity__value">2 Взрослых, 0 детей</div>
+											<div class="dropdown">
+												<p class="filter__description">Взрослые</p>
+												<input id="filter__quantity-adults" class="filter__field filter__input-t" type="text" value="2" maxlength="2">
+												<p class="filter__description">Дети</p>
+												<input id="filter__quantity-children" class="filter__field filter__input-t" type="text" value="0" maxlength="2">
+												<a id="js-close1" href="#">Закрыть</a>
+											</div>
+										</div>
+									</div>
+									<div class="float-left filter__col4">
+										<p class="filter__description">Стоимость тура</p>
+										<div id="js-filter__price" class="dropdown-wrap filter__field filter__col filter__border borderRight2Radius">
+											<div class="filter__price-range"></div>
+											<div class="filter__price dropdown">
+												<input id="filter__value-min" class="filter__field filter__input-t" type="text">
+												<span>-</span>
+												<input id="filter__value-max" class="filter__field filter__input-t" type="text">
+												<div id="js-slider1" class="filter__slider"></div>
+												<a id="js-close2" href="#">Закрыть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row no-gutters mt-4">
+								<div class="col-12 clearfix">
+									<div class="float-left filter__col5">
+										<p class="filter__description">Категория отелей от</p>
+										<div class="filter__field filter__col borderLeft2Radius">
+											<div class="rating_star small hover">
+												<span class="selected"></span>
+												<span class="selected"></span>
+												<span class="selected"></span>
+												<span class="selected"></span>
+												<span></span>
+											</div>
+										</div>
+									</div>
+									<div class="float-left filter__col6">
+										<p class="filter__description">Рейтинг TopHotels</p>
+										<div class="filter__field filter__col filter__border filter__select2-field p-0">
+											<select class="js-ratingTopHotels" name="" id="" style="width: 100%;">
+												<option value="2.0"></option>
+												<option value="3.0"></option>
+												<option value="4.0" selected></option>
+												<option value="5.0"></option>
+											</select>
+										</div>
+									</div>
+									<div class="float-left filter__col7">
+										<p class="filter__description">Тип питания</p>
+										<div class="filter__field filter__col filter__border filter__select2-field filter__border-left p-0">
+											<select class="js-typefood" name="" id="" style="width: 100%;">
+												<option value="l" selected>Любой</option>
+												<option value="RO">RO</option>
+												<option value="BB">BB</option>
+												<option value="HB">HB</option>
+												<option value="FB">FB</option>
+											</select>
+										</div>
+									</div>
+									<div class="float-left filter__col8">
+										<p class="filter__description">Расположение</p>
+										<div class="filter__field filter__col filter__border borderRight2Radius filter__select2-field p-0">
+											<select class="js-location" name="" id="" style="width: 100%;">
+												<option value="1l" selected>Пляжные, 1-я линия</option>
+												<option value="2l">Пляжные, 2-я линия</option>
+												<option value="3l">Пляжные, 3-я линия</option>
+											</select>
+										</div>
+									</div>
+									<div class="float-left filter__col9">
+										<button class="btn btn-cross float-right"><span class="icon-cross"></span>УДАЛИТЬ ПОДБОРКУ</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-md-4 col-lg-4">
+					<div class="footer__menu">
+						<div class="title">Туристический проект</div>
+						<p>Москва, 1-й Щипковский переулок, д.1</p>
+						<a href="#">Показать на карте</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 col-lg-4">
+					<div class="footer__menu footer__col">
+						Время работы офиса:<br>
+						Будни 10:00 - 21:00<br>
+						Выходные и праздники 11:00-17:00
+					</div>
+				</div>
+				<div class="col-6 col-md-2 col-lg-2">
+					<div class="footer__menu footer__col">
+						<p>+7 495 585 55 55</p>
+						<a href="#">Обратная связь</a>
+					</div>
+				</div>
+				<div class="col-6 col-md-3 col-lg-2">
+					<div class="footer__menu footer__col footer__soc-network">
+						<div><a class="footer__vk" href="#"><span></span>Вконтакте</a></div>
+						<div><a class="footer__fb" href="#"><span></span>Facebook</a></div>
+						<div><a class="footer__insta" href="#"><span></span>Instagram</a></div>
+						<div><a class="footer__ok" href="#"><span></span>Одноклассники</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p class="text-right footer__made">Разработано командой TourAdmin &copy; 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/select2.full.min.js"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
