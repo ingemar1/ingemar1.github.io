@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$(".top-button").on("click touchstart touchend", function(e){
+	$(".top-button").on("click touchstart", function(e){
 		//var elementClick = $(this).attr("href");
-		//e.preventDefault();
+		//e.preventDefault(e);
 		//var destination = $(elementClick).offset().top;
-    $('html').animate({ scrollTop: 0 }, 500);
+    $('html, body').animate({ scrollTop: 0 }, 500);
 	});
 });
