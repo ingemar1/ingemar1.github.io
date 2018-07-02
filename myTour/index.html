@@ -38,13 +38,13 @@
 			<div class="row">
 				<div class="col-md-10 mx-auto">
 					<div class="filter shadow">
-						<ul class="filter__tabs clearfix">
-							<li><a class="underline" href="#">ПОДБОРКА ВАСИ</a></li>
-							<li><a class="underline active-item" href="#">ПОДБОРКА 123</a></li>
-							<li><a class="underline" href="#">ТУРЦИЯ 20.03</a></li>
-							<li><a class="underline" href="#">ПОДБОРКА #1</a></li>
-							<li><button class="tabs-btn btn"><span class="icon-plus"></span>ДОБАВИТЬ ПОДБОРКУ</button></li>
-						</ul>
+								<ul class="filter__tabs clearfix">
+									<li><a class="underline" href="#">ПОДБОРКА ВАСИ</a></li>
+									<li><a class="underline active-item" href="#">ПОДБОРКА 123</a></li>
+									<li><a class="underline" href="#">ТУРЦИЯ 20.03</a></li>
+									<li><a class="underline" href="#">ПОДБОРКА #1</a></li>
+									<li><button class="tabs-btn btn"><span class="icon-plus"></span>ДОБАВИТЬ ПОДБОРКУ</button></li>
+								</ul>
 						<div class="filter__selection">
 							<div class="row">
 								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mr-xl-3">
@@ -57,7 +57,7 @@
 										<select class="js-city" name="" id="" style="width: 227px;">
 											<option value="MS">Москва</option>
 											<option value="Spb" selected>Санкт-Петербург</option>
-											<option value="EK">Екатеренбург</option>
+											<option value="EK">Екатеринбург</option>
 										</select>
 									</div>
 								</div>
@@ -68,12 +68,14 @@
 							<div class="row">
 								<div class="col-md-12 mt-4 mb-4">
 									<p class="filter__description">Вы можете задать несколько стран или регионов для одной подборки</p>
-									<div class="border2radius filter__field">
+									<div class="border2radius filter__field filter__country">
 										<p class="filter__country">Юго-Восточная Азия</p>
 										<select name="" id="" class="js-country" multiple="multiple" style="width: 100%;">
-											<option value="thailand">Таиланд</option>
-											<option value="vietnam" selected>Вьетнам</option>
-											<option value="indonesia">Индонезия</option>
+											<optgroup label="Юго-Восточная Азия">
+												<option value="thailand">Таиланд</option>
+												<option value="vietnam" selected>Вьетнам</option>
+												<option value="indonesia">Индонезия</option>
+											</optgroup>
 										</select>
 									</div>
 								</div>
@@ -85,14 +87,19 @@
 								</div>
 							</div>
 							<div class="row no-gutters mt-4">
-								<div class="col-12 clearfix">
-									<div class="float-left filter__col1">
+								<div class="col-lg-4 col-sm-6 col-12">
+									<div class="">
 										<p class="filter__description">Даты вылета</p>
-										<input type='text' data-range="true" data-multiple-dates="2" data-multiple-dates-separator=" - " class="js-datepicker datepicker-here filter__field filter__col filter__datepicker borderLeft2Radius" data-position="right top" />
+										<div class="filter__field filter__select2-field borderLeft2Radius">
+											<input type='text' data-range="true" data-multiple-dates="2" data-multiple-dates-separator=" - " class="js-datepicker datepicker-here filter__datepicker" data-position="top left" />
+										</div>
 									</div>
-									<div class="float-left filter__col2">
-										<p class="filter__description">На сколько</p>
-										<div id="js-filter__nights" class="filter__field filter__col filter__border filter__select2-field filter__nights">
+								</div>
+
+								<div class="col-lg-2 col-sm-6 col-12">
+									<p class="filter__description">На сколько</p>
+									<div class="dropdown-wrap">
+										<div id="js-filter__nights" class="filter__field filter__border filter__select2-field filter__nights filter__border-left">
 											<div class="filter__nights__value">7 — 14 ночей</div>
 											<div class="dropdown dropdown-nights">
 												<div class="filter__nights__numbers">
@@ -102,9 +109,12 @@
 											</div>
 										</div>
 									</div>
-									<div class="float-left filter__col3">
-										<p class="filter__description">Количество гостей</p>
-										<div id="js-filter__quantity" class="filter__field filter__col filter__border dropdown-wrap filter__border-left">
+								</div>
+
+								<div class="col-lg-3 col-sm-6 col-12">
+									<p class="filter__description">Количество гостей</p>
+									<div class="dropdown-wrap">
+										<div id="js-filter__quantity" class="filter__field filter__select2-field filter__border filter__border-left">
 											<div class="filter__quantity__value">2 Взрослых, 0 детей</div>
 											<div class="dropdown">
 												<p class="filter__description">Взрослые</p>
@@ -115,9 +125,12 @@
 											</div>
 										</div>
 									</div>
-									<div class="float-left filter__col4">
-										<p class="filter__description">Стоимость тура</p>
-										<div id="js-filter__price" class="dropdown-wrap filter__field filter__col filter__border borderRight2Radius">
+								</div>
+
+								<div class="col-lg-3 col-sm-6 col-12">
+									<p class="filter__description">Стоимость тура</p>
+									<div class="dropdown-wrap">
+										<div id="js-filter__price" class="dropdown-wrap filter__field filter__select2-field filter__border borderRight2Radius filter__border-left">
 											<div class="filter__price-range"></div>
 											<div class="filter__price dropdown">
 												<input id="filter__value-min" class="filter__field filter__input-t" type="text">
@@ -132,55 +145,53 @@
 							</div>
 
 							<div class="row no-gutters mt-4">
-								<div class="col-12 clearfix">
-									<div class="float-left filter__col5">
-										<p class="filter__description">Категория отелей от</p>
-										<div class="filter__field filter__col borderLeft2Radius">
-											<div class="rating_star small hover">
-												<span class="selected"></span>
-												<span class="selected"></span>
-												<span class="selected"></span>
-												<span class="selected"></span>
-												<span></span>
-											</div>
+								<div class="col-xl-2 col-lg-3 col-sm-6 col-12">
+									<p class="filter__description">Категория отелей от</p>
+									<div class="filter__field borderLeft2Radius filter__select2-field">
+										<div class="rating_star small hover">
+											<span class="selected"></span>
+											<span class="selected"></span>
+											<span class="selected"></span>
+											<span class="selected"></span>
+											<span></span>
 										</div>
 									</div>
-									<div class="float-left filter__col6">
-										<p class="filter__description">Рейтинг TopHotels</p>
-										<div class="filter__field filter__col filter__border filter__select2-field p-0">
-											<select class="js-ratingTopHotels" name="" id="" style="width: 100%;">
-												<option value="2.0"></option>
-												<option value="3.0"></option>
-												<option value="4.0" selected></option>
-												<option value="5.0"></option>
-											</select>
-										</div>
+								</div>
+								<div class="col-xl-auto col-lg-3 col-sm-6 col-12">
+									<p class="filter__description">Рейтинг TopHotels</p>
+									<div class="filter__field filter__border filter__select2-field p-0 filter__border-left">
+										<select class="js-ratingTopHotels" name="" id="" style="width: 100%;">
+											<option value="2.0"></option>
+											<option value="3.0"></option>
+											<option value="4.0" selected></option>
+											<option value="5.0"></option>
+										</select>
 									</div>
-									<div class="float-left filter__col7">
-										<p class="filter__description">Тип питания</p>
-										<div class="filter__field filter__col filter__border filter__select2-field filter__border-left p-0">
-											<select class="js-typefood" name="" id="" style="width: 100%;">
-												<option value="l" selected>Любой</option>
-												<option value="RO">RO</option>
-												<option value="BB">BB</option>
-												<option value="HB">HB</option>
-												<option value="FB">FB</option>
-											</select>
-										</div>
+								</div>
+								<div class="col-lg-2 col-sm-6 col-12">
+									<p class="filter__description">Тип питания</p>
+									<div class="filter__field filter__border filter__select2-field filter__border-left p-0">
+										<select class="js-typefood" name="" id="" style="width: 100%;">
+											<option value="l" selected>Любой</option>
+											<option value="RO">RO</option>
+											<option value="BB">BB</option>
+											<option value="HB">HB</option>
+											<option value="FB">FB</option>
+										</select>
 									</div>
-									<div class="float-left filter__col8">
-										<p class="filter__description">Расположение</p>
-										<div class="filter__field filter__col filter__border borderRight2Radius filter__select2-field p-0">
-											<select class="js-location" name="" id="" style="width: 100%;">
-												<option value="1l" selected>Пляжные, 1-я линия</option>
-												<option value="2l">Пляжные, 2-я линия</option>
-												<option value="3l">Пляжные, 3-я линия</option>
-											</select>
-										</div>
+								</div>
+								<div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+									<p class="filter__description">Расположение</p>
+									<div class="filter__field filter__border borderRight2Radius filter__select2-field p-0 filter__border-left">
+										<select class="js-location" name="" id="" style="width: 100%;">
+											<option value="1l" selected>Пляжные, 1-я линия</option>
+											<option value="2l">Пляжные, 2-я линия</option>
+											<option value="3l">Пляжные, 3-я линия</option>
+										</select>
 									</div>
-									<div class="float-left filter__col9">
-										<button class="btn btn-cross float-right"><span class="icon-cross"></span>УДАЛИТЬ ПОДБОРКУ</button>
-									</div>
+								</div>
+								<div class="col-xl-auto col-12 ml-auto">
+									<button class="btn btn-cross float-right"><span class="icon-cross"></span>УДАЛИТЬ ПОДБОРКУ</button>
 								</div>
 							</div>
 						</div>
@@ -234,6 +245,7 @@
 	<script src="js/select2.full.min.js"></script>
 	<script src="js/datepicker.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

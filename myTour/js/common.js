@@ -17,6 +17,8 @@ $(document).ready(function(){
 	  templateSelection: formatState
 	});
 
+	//$(".filter__country").text($(".js-country optgroup").attr("label"));
+
 
 	function formatState2 (state) {
 	  if (!state.id) {
@@ -28,19 +30,21 @@ $(document).ready(function(){
 	  return $state;
 	};
 
+
 	$(".js-ratingTopHotels").select2({
 	  templateResult: formatState2,
-	  templateSelection: formatState2
+	  templateSelection: formatState2,
+	  minimumResultsForSearch: Infinity
 	});
 
-	$(".js-typefood").select2();
-	$(".js-location").select2();
+	$(".js-typefood").select2({minimumResultsForSearch: Infinity});
+	$(".js-location").select2({minimumResultsForSearch: Infinity});
 
 
 	var currentDate = new Date();
 	var dp = $(".js-datepicker").datepicker({
 	    language: {
-		    daysShort: ['Вс','Пн','Вт','Ср','Чет','Пт','Сб'],
+		    daysShort: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
 		  	dateFormat: "d MM, D",
 		  	minDate: currentDate
 	    }
@@ -132,28 +136,28 @@ $(document).ready(function(){
 
 
 	$('.filter__nights__numbers div').on({
-		mouseenter: function(){	   
-			if($(".filter__nights__numbers div").is(".start")){
-				if($(this).is(":not(.start")){
-					if(!$(".filter__nights__numbers div").is(".end")){
-						var startNumberIndex = $(".filter__nights__numbers .start").index();
-						var endNumberIndex = $(".filter__nights__numbers div").last().index();
-						var thisNumber = $(this).index();
-						if(startNumberIndex < thisNumber){
-							var elementsLeft = $(".filter__nights__numbers div").slice(0, startNumberIndex);
-							elementsLeft.removeClass("selected");
-							var qnumbers = $(".filter__nights__numbers div").slice(startNumberIndex, thisNumber);
-						}else{
-							var elementsRight = $(".filter__nights__numbers div").slice(startNumberIndex, endNumberIndex);
-							elementsRight.removeClass("selected");
-							var qnumbers = $(".filter__nights__numbers div").slice(thisNumber, startNumberIndex);
-						}
-						qnumbers.addClass("selected");
+		"mouseenter touchstart": function(e){
+			e.preventDefault();
+			if($(".filter__nights__numbers div").is(".start") && $(this).is(":not(.start)")){
+				if(!$(".filter__nights__numbers div").is(".end")){
+					var startNumberIndex = $(".filter__nights__numbers .start").index();
+					var endNumberIndex = $(".filter__nights__numbers div").last().index();
+					var thisNumber = $(this).index();
+					if(startNumberIndex < thisNumber){
+						var elementsLeft = $(".filter__nights__numbers div").slice(0, startNumberIndex);
+						elementsLeft.removeClass("selected");
+						var qnumbers = $(".filter__nights__numbers div").slice(startNumberIndex, thisNumber);
+					}else{
+						var elementsRight = $(".filter__nights__numbers div").slice(startNumberIndex, endNumberIndex);
+						elementsRight.removeClass("selected");
+						var qnumbers = $(".filter__nights__numbers div").slice(thisNumber, startNumberIndex);
 					}
+					qnumbers.addClass("selected");
 				}
 			}
 		},
-		click: function(){
+		"click touchstart": function(e){
+			e.preventDefault();
 			if($(".filter__nights__numbers div").is(".start") && $(".filter__nights__numbers div").is(".end")){
 					$(".filter__nights__numbers div").removeClass("start");
 					$(".filter__nights__numbers div").removeClass("end");
