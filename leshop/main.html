@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="library/fancybox/jquery.fancybox.css?v=2.1.5.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="js/slider/slider.css" />
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+	<script type="text/javascript" src="library/fancybox/jquery.fancybox.js?v=2.1.5.js"></script>
+	<script src="js/slider/slider.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function(){
+			slider = new Slider({
+				id:"#main_slider", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+				width:"100%", // Ширина слайдера
+				height:"420px", // Высота слайдера
+				autoPlay:true, // Начинает ли пролистывать при загруке страицы
+				interval:5000, // Временной интервал между слайдами
+				/*left_btn:".mainslider .left", // Класс левой кнопки
+				right_btn:".mainslider .right", // Класс правой кнопки*/
+				action:"Opacity"
+			});
+			slider = new Slider({
+				id:"#act_sell", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+				width:"100%", // Ширина слайдера
+				height:"550px", // Высота слайдера
+				autoPlay:true, // Начинает ли пролистывать при загруке страицы
+				interval:10000, // Временной интервал между слайдами
+				left_btn:".actions-col #act_sell-btn_left", // Класс левой кнопки
+				right_btn:".actions-col #act_sell-btn_right", // Класс правой кнопки
+				action:"Horisontal"
+			});
+			slider = new Slider({
+				id:"#top_sell", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+				width:"100%", // Ширина слайдера
+				height:"550px", // Высота слайдера
+				autoPlay:true, // Начинает ли пролистывать при загруке страицы
+				interval:10000, // Временной интервал между слайдами
+				left_btn:".actions-col #top_sell-btn_left", // Класс левой кнопки
+				right_btn:".actions-col #top_sell-btn_right", // Класс правой кнопки
+				action:"Horisontal"
+			});
+			slider = new Slider({
+				id:"#new_sell", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+				width:"100%", // Ширина слайдера
+				height:"550px", // Высота слайдера
+				autoPlay:true, // Начинает ли пролистывать при загруке страицы
+				interval:10000, // Временной интервал между слайдами
+				left_btn:".actions-col #new_sell-btn_left", // Класс левой кнопки
+				right_btn:".actions-col #new_sell-btn_right", // Класс правой кнопки
+				action:"Horisontal"
+			});
+			slider = new Slider({
+				id:"#news_lnn", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+				width:"100%", // Ширина слайдера
+				height:"130px", // Высота слайдера
+				autoPlay:true, // Начинает ли пролистывать при загруке страицы
+				interval:5000, // Временной интервал между слайдами
+				/*left_btn:".mainslider .left", // Класс левой кнопки
+				right_btn:".mainslider .right", // Класс правой кнопки*/
+				action:"Opacity"
+			});
+			
+			slider = new Slider({
+			id:"#fancy-main_photo", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+			width:"302px", // Ширина слайдера
+			height:"380px", // Высота слайдера
+			autoPlay:false, // Начинает ли пролистывать при загруке страицы
+			interval:2000, // Временной интервал между слайдами
+			action:"Opacity" 
+			});
+			slider = new Slider({
+			id:"#fancy-miniatures", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+			width:"289px", // Ширина слайдера
+			height:"116px", // Высота слайдера
+			autoPlay:false, // Начинает ли пролистывать при загруке страицы
+			interval:2000, // Временной интервал между слайдами
+			left_btn:".product-miniatures_wrap .fancy-left", // Класс левой кнопки
+			right_btn:".product-miniatures_wrap .fancy-right", // Класс правой кнопки
+			action:"Scroll",
+			scrollset: {vit_max:15,accs_beg:1,time_int:40,box_width:111}
+			});
+		});
+	</script>
+</head>
+<body>
+<div class="page">
+	<div id="header">
+		<div class="top1">
+			<div class="wrapper">
+				<div class="user">
+					<a href="#"><span class="icons-header icon-user"></span>Вход</a>
+					<a href="#">Регистрация</a>
+				</div>
+				<div class="search">
+					<form action="" method="">
+						<input type="text" name="search" placeholder="Поиск по сайту..."/>
+						<input type="submit" name="submit" class="icons-header" value="" />
+					</form>
+				</div>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Условия оплаты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<hr/>
+			</div>
+		</div>
+		<div class="top2">
+			<div class="wrapper">
+				<div class="basket">
+					<a href="#" class="basket_count"><span class="icons-header icon-basket"><span class="icons-header icon-basket_balloon">12</span></span><span class="basket-text">Ваша корзина</span></a>
+					<div class="basket_header">
+						<div class="basket_header-row clearfix">
+							<div class="col-left">
+								<img src="images/slide1.jpg" class="basket_header-img" alt=""/>
+							</div>
+							<div class="col-left">
+								<a href="#" class="basket_header-title">Название товара</a>
+								<div class="basket_header-price">1 Х 16 700 <span class="rouble">i</span></div>
+							</div>
+						</div>
+						<div class="basket_header-row clearfix">
+							<div class="col-left">
+								<img src="images/slide1.jpg" class="basket_header-img" alt=""/>
+							</div>
+							<div class="col-left">
+								<a href="#" class="basket_header-title">Название товара, которое занимает более двух строк</a>
+								<div class="basket_header-price">1 Х 16 700 <span class="rouble">i</span></div>
+							</div>
+						</div>
+						<div class="clearfix basket_header-result">
+							<div class="col-left">
+								<div class="basket_header-total">Итог 33 400 <span class="rouble">i</span></div>
+							</div>
+							<div class="col-right">
+								<a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a id="fancy_call" class="call" href="#fancybox_call"><span class="icons-header icon-phone"></span><span class="call-text">Заказать звонок</span></a>
+				<div class="phones">8 (123) 456 78 91<br/>8 (123) 456 78 91</div>
+				<a class="logo" href="/">
+					<img src="images/logo.png" alt="" />
+					Интернет-магазин одежды и аксессуаров
+				</a>
+			</div>
+		</div>
+		<div id="fancybox_call" class="fancy_call" style="display: none;">
+			<div class="fancy_title title">Обратный звонок</div>
+			<form action="" method="">
+				<input type="text" placeholder="Имя *" class="field" />
+				<input type="text" placeholder="Телефон *" class="field" />
+				<textarea class="field textarea" placeholder="Комментарий"></textarea>
+				<input type="submit" value="отправить" class="btn btn_input"/>
+			</form>
+		</div>
+		<div class="top3">
+			<div class="wrapper">
+				<a href="#" class="home"><span class="icons-header icon-home"></span></a>
+				<ul class="menu">
+					<li id="menu1"><a href="#">Для мужчин</a></li>
+					<li id="menu2"><a href="#">Для женщин</a></li>
+					<li id="menu3"><a href="#">Для детей</a></li>
+					<li><a href="#">Обувь</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</div>
+			<div class="under_menu" id="sub_menu1">
+				<div class="wrapper clearfix">
+					<ul class="under_menu-item">
+						<li><a href="#">Верхняя одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пальто</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Плащи</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пуховики</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Ветровки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Куртки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">Спортивная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Футболки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Поло (при наведении)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки (при нажатии)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Спортивне костюмы</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">повседневная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джинсы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Рубашки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Брюки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки и олимпийки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Носки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#"></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Нижнее белье</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Костюмы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пиджаки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джемперы и кардиганы</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="under_menu" id="sub_menu2">
+				<div class="wrapper clearfix">
+					<ul class="under_menu-item">
+						<li><a href="#">Верхняя одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пальто</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Плащи</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пуховики</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Ветровки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Куртки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">Спортивная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Футболки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Поло (при наведении)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки (при нажатии)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Спортивне костюмы</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">повседневная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джинсы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Рубашки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Брюки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки и олимпийки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Носки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#"></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Нижнее белье</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Костюмы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пиджаки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джемперы и кардиганы</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main_slider lenetnet_slider" id="main_slider">
+		<div class="slide" rel="1">
+			<div class="background_cover main-slide" style="background-image:url(images/main_slide1.jpg);">
+				<div class="mainpage-slider_text">
+					<div class="slider-text1">NEW</div>
+					<div class="slider-text2">коллекция весна-лето</div>
+					<div class="slider-text3">Создай свой образ</div>
+					<div class="btn-bot"></div>
+					<a href="#" class="btn1">смотреть новинки</a>
+				</div>
+			</div>
+			<div class="transparent_color"></div>
+		</div>
+		<div class="slide" rel="2">
+			<div class="background_cover main-slide" style="background-image:url(images/main_slide1.jpg);">
+				<div class="mainpage-slider_text">
+					<div class="slider-text1">NEW 2</div>
+					<div class="slider-text2">коллекция весна-лето 2</div>
+					<div class="slider-text3">Создай свой образ 2</div>
+					<div class="btn-bot"></div>
+					<a href="#" class="btn1">смотреть новинки 2</a>
+				</div>
+			</div>
+			<div class="transparent_color"></div>
+		</div>
+		<div class="slide" rel="3">
+			<div class="background_cover main-slide" style="background-image:url(images/main_slide1.jpg);">
+				<div class="mainpage-slider_text">
+					<div class="slider-text1">NEW 3</div>
+					<div class="slider-text2">коллекция весна-лето 3</div>
+					<div class="slider-text3">Создай свой образ 3</div>
+					<div class="btn-bot"></div>
+					<a href="#" class="btn1">смотреть новинки 3</a>
+				</div>
+			</div>
+			<div class="transparent_color"></div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="main-icons clearfix">
+			<div class="main-icon">
+				<img src="images/icon-package.png" alt="" />
+				<span>Огромный ассортимент</span>
+			</div>
+			<div class="main-icon">
+				<img src="images/icon-arm.png" alt="" />
+				<span>Гарантия качества</span>
+			</div>
+			<div class="main-icon">
+				<img src="images/icon-car.png" alt="" />
+				<span>Доставка по всей Росии</span>
+			</div>
+			<div class="main-icon">
+				<img src="images/icon-wallet.png" alt="" />
+				<span>Лучшие цены</span>
+			</div>
+			<div class="main-icon">
+				<img src="images/icon-percent.png" alt="" />
+				<span>Лучшие цены</span>
+			</div>
+		</div>
+		<div class="clearfix">
+			<div class="column_left">
+				<div class="catalog_wrap" style="width:100%;">
+					<div class="catalog">
+						<a href="#" class="background_cover catalog-img" style="background-image:url(images/for-her.jpg);height:180px;">
+						</a>
+						<span class="text-top">Для нее</span>
+						<a href="#" class="btn_show btn_show-top">Перейти в каталог</a>
+					</div>
+				</div>
+				<div>
+					<div class="catalog_wrap">
+						<div class="catalog">
+							<a href="#" class="background_cover catalog-img" style="background-image:url(images/for-him.jpg);height:180px;">
+							</a>
+							<span class="text-bottom">Для него</span>
+							<a href="#" class="btn_show btn_show-bottom">Перейти в каталог</a>
+						</div>
+					</div>
+					<div class="catalog_wrap">
+						<div class="catalog">
+							<a href="#" class="background_cover catalog-img" style="background-image:url(images/for-children.jpg);height:180px;">
+							</a>
+							<span class="text-top">Для детей</span>
+							<a href="#" class="btn_show btn_show-top">Перейти в каталог</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column_right">
+				<div class="catalog_wrap">
+						<div class="catalog">
+							<a href="#" class="background_cover catalog-img" style="background-image:url(images/accessories.jpg);height:381px;">
+							</a>
+							<span class="text-bottom">Аксессуары</span>
+							<a href="#" class="btn_show btn_show-bottom">Перейти в каталог</a>
+						</div >
+				</div>
+				<div class="catalog_wrap">
+						<div class="catalog">
+							<a href="#" class="background_cover catalog-img" style="background-image:url(images/shoes.jpg);height:381px;">
+							</a>
+							<span class="text-top">Обувь</span>
+							<a href="#" class="btn_show btn_show-top">Перейти в каталог</a>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="actions clearfix">
+			<div class="actions-col">
+				<div class="actions-title">
+					<hr class="hr"/>
+					<div class="title1">Хиты продаж</div>
+				</div>
+				<div id="top_sell-btn_left" class='slider_butn3 left'></div>
+				<div id="top_sell-btn_right" class='slider_butn3 right'></div>
+				<div id="top_sell" class="lenetnet_slider">
+					<div class="slide" rel="1">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="2">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="3">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="actions-col">
+				<div class="actions-title">
+					<hr class="hr"/>
+					<div class="title1">новинки</div>
+				</div>
+				<div id="new_sell-btn_left" class='slider_butn3 left'></div>
+				<div id="new_sell-btn_right" class='slider_butn3 right'></div>
+				<div id="new_sell" class="lenetnet_slider">
+					<div class="slide" rel="1">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара, которое занимает более одной строки</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="2">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара, которое занимает более одной строки</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="3">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара, которое занимает более одной строки</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="actions-col">
+				<div class="actions-title">
+					<hr class="hr"/>
+					<div class="title1">акции</div>
+				</div>
+				<div id="act_sell-btn_left" class='slider_butn3 left'></div>
+				<div id="act_sell-btn_right" class='slider_butn3 right'></div>
+				<div id="act_sell" class="lenetnet_slider">
+					<div class="slide" rel="1">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span><span class="product-price_old">19 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="2">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span><span class="product-price_old">19 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+					<div class="slide" rel="3">
+						<div class="background_cover actions-slide" style="background-image:url(images/slide1.jpg);">
+							<a href="#fancybox_view" class="btn3 fancy_view_btn">Быстрый просмотр</a>
+						</div>
+						<a href="#" class="product_title">Название товара</a>
+						<div><span class="product-price_new">16 700 <span class="rouble">i</span></span><span class="product-price_old">19 700 <span class="rouble">i</span></span></div>
+						<div class="actions-btn_wrap"><a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fancybox_view" class="fancy_view clearfix" style="display: none;">
+			<div class="fancy_slider">
+					<div id="fancy-main_photo" class="lenetnet_slider">
+						<div class="slide" rel='fid_1'>
+							<img src="images/slide1.jpg" alt="01" class="fancy_slider-main_photo"/>
+						</div>
+						<div class="slide" rel='fid_2'>
+							<img src="images/2.jpg" alt="01" class="fancy_slider-main_photo"/>
+						</div>
+					</div>
+					<div id="fancy-main_photo_pag" class="product-miniatures_wrap">
+						<div class='slider_butn2 left fancy-left'></div>
+						<div class='slider_butn2 right fancy-right'></div>
+						<div id="fancy-miniatures" class="lenetnet_slider product-miniatures">
+							<div class="slide pagination" rel='fid_1'>
+								<img src="images/slide1.jpg" alt="01" class="fancy_slider-miniatures"/>
+							</div>
+							<div class="slide pagination" rel='fid_2'>
+								<img src="images/2.jpg" alt="02" class="fancy_slider-miniatures"/>
+							</div>
+							<div class="slide pagination" rel='fid_3'>
+								<img src="images/slide1.jpg" alt="03" class="fancy_slider-miniatures"/>
+							</div>
+							<div class="slide pagination" rel='fid_4'>
+								<img src="images/slide1.jpg" alt="04" class="fancy_slider-miniatures"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			<form action="" method="">
+				<div class="fancy_colR">
+					<a href="#" class="title3 product-title border2">Название товара, которое занимает более одной строки</a>
+					<div class="description">
+						Краткое описание товара,  описание товара, Краткое описание товара, краткое описание товара, Краткое описание товара, краткое описание товара, Краткое описание товара, краткое описание товара, товара, краткое описание товара, Краткое о, краткое описание  товара, краткое описание товара, Краткое описание товара, краткое описание товара...
+					</div>
+					<div class="product-properties">
+						<div class="product-prop">
+							<div class="prop-name">Количество:</div>
+							<div class="prop-quantity clearfix">
+								<a class="quantity quantity_btn" href="">-</a>
+								<input type="text" value="1" class="quantity quantity-entry"/>
+								<a class="quantity quantity_btn" href="">+</a>
+							</div>
+						</div>
+						<div class="product-prop">
+							<div class="prop-name">Размер:</div>
+							<div>
+								<input type="radio" id="fpropSize1" name="prop-size" class="prop_input"/>
+								<label class="prop-square" for="fpropSize1">S</label>
+								<input type="radio" id="fpropSize2" name="prop-size" class="prop_input"/>
+								<label class="prop-square" for="fpropSize2">M</label>
+								<input type="radio" id="fpropSize3" name="prop-size" class="prop_input"/>
+								<label class="prop-square" for="fpropSize3">L</label>
+								<input type="radio" id="fpropSize4" name="prop-size" class="prop_input"/>
+								<label class="prop-square" for="fpropSize4">XL</label>
+							</div>
+						</div>
+						<div class="product-prop">
+							<div class="prop-name">Цвет:</div>
+							<div>
+								<input type="radio" id="fpropColor1" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#757754;" for="fpropColor1"></label>
+								<input type="radio" id="fpropColor2" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#ede0d8;" for="fpropColor2"></label>
+								<input type="radio" id="fpropColor3" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#c8ae7d;" for="fpropColor3"></label>
+								<input type="radio" id="fpropColor4" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#a8a981;" for="fpropColor4"></label>
+								<input type="radio" id="fpropColor5" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#c5aa9a;" for="fpropColor5"></label>
+								<input type="radio" id="fpropColor6" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#f9c17a;" for="fpropColor6"></label>
+								<input type="radio" id="fpropColor7" name="prop-color" class="prop_input"/>
+								<label class="prop-square" style="background-color:#d2d6b1;" for="fpropColor7"></label>
+							</div>
+						</div>
+						<div class="product-prop">
+							<div class="prop-name">Рейтинг:</div>
+							<div class="rating_star large">
+								<span class="selected"></span>
+								<span class="selected"></span>
+								<span class="selected"></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div>
+							<span class="price_old">19 700 <span class="rouble">i</span></span><span class="price_new">16 700 <span class="rouble">i</span></span>
+						</div>
+					</div>
+				</div>
+				<a class="btn fancy_basket_btn" href="#fancybox_basket">в корзину</a>
+			</form>
+		</div>
+		<div id="fancybox_basket" class="fancy_basket" style="display: none;">
+			<img src="images/icon-basket.png" alt="" />
+			<div class="fancy_title title">Товар добавлен в корзину!</div>
+			<div>
+				<a class="btn" href="#">продолжить покупки</a><a class="btn" href="#">оФОРМИТЬ ЗАКАЗ</a>
+			</div>
+		</div>
+		<div class="news clearfix">
+				<div class="title2">новости</div>
+				<div id="news_lnn" class="lenetnet_slider">
+					<div class="slide" rel="1">
+						<div class="news-col_left">
+							<img class="border100radius news-img" src="images/1.jpg" alt="" />
+							<div class="news-text">
+								<div class="news-data">20.11.2015</div>
+								<a href="#" class="news-title title3">Заголовок новости</a>
+								<p>Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости...</p>
+							</div>
+						</div>
+						<div class="news-col_right">
+							<img class="border100radius news-img" src="images/1.jpg" alt="" />
+							<div class="news-text">
+								<div class="news-data">20.11.2015</div>
+								<a href="#" class="news-title title3">Заголовок новости</a>
+								<p>Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости...</p>
+							</div>
+						</div>
+					</div>
+					<div class="slide" rel="2">
+						<div class="news-col_left">
+							<img class="border100radius news-img" src="images/1.jpg" alt="" />
+							<div class="news-text">
+								<div class="news-data">20.11.2015</div>
+								<a href="#" class="news-title title3">Заголовок новости 2</a>
+								<p>Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости...</p>
+							</div>
+						</div>
+						<div class="news-col_right">
+							<img class="border100radius news-img" src="images/1.jpg" alt="" />
+							<div class="news-text">
+								<div class="news-data">20.11.2015</div>
+								<a href="#" class="news-title title3">Заголовок новости 2</a>
+								<p>Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости.Краткий текст новости - анонс новости...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		<div class="advantages">
+				<h1 class="title2">Преимущества компании</h1>
+				<div class="advantages-inside clearfix">
+					<img class="advantages-img" src="images/icon-package.png" alt="" />
+					<div class="advantages-text">
+						<div class="title4">Огромный ассортимент</div>
+						<p>Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества </p>
+					</div>
+				</div>
+				<div class="advantages-inside clearfix">
+					<img class="advantages-img" src="images/icon-arm.png" alt="" />
+					<div class="advantages-text">
+						<div class="title4">гарантия качества</div>
+						<p>Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества </p>
+					</div>
+				</div>
+				<div class="advantages-inside clearfix">
+					<img class="advantages-img" src="images/icon-car.png" alt="" />
+					<div class="advantages-text">
+						<div class="title4">Доставка по всей России</div>
+						<p>Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества </p>
+					</div>
+				</div>
+				<div class="advantages-inside clearfix">
+					<img class="advantages-img" src="images/icon-wallet.png" alt="" />
+					<div class="advantages-text">
+						<div class="title4">Лучшие цены</div>
+						<p>Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества </p>
+					</div>
+				</div>
+				<div class="advantages-inside clearfix">
+					<img class="advantages-img" src="images/icon-percent.png" alt="" />
+					<div class="advantages-text">
+						<div class="title4">скидки постоянным покупактелям</div>
+						<p>Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества компании. Текст с описанием данного преимущества </p>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="footer_spacer"></div>
+</div>
+<div class="footer">
+	<div class="bottom1">
+		<div class="wrapper">
+			<div class="left">
+				Подпишитесь на новости и первыми получайте информацию о всех наших новинках и скидках!
+			</div>
+			<div class="gt"></div>
+			<div class="right">
+				<form action="#" method="post">
+					<input type="text" placeholder="Введите Ваш e-mail..." />
+					<!--<input type="submit" value="" />-->
+					<a href="#fancybox_mail" id="fancy_mail" class="icons-footer icon-envelope2"></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="fancybox_mail" class="fancy_mail" style="display: none;">
+		<div class="fancy_title title">Спасибо!</div>
+		<div class="fancy_text">
+			Вы подписались на рассылку наших новостей, чтобы первыми узнавать обо всех акциях и скидках.
+			<br />
+			<br />
+			<span>На Ваш почтовый ящик придёт письмо с подтверждением подписки.</span>
+		</div>
+	</div>
+	<div class="bottom2">
+		<div class="wrapper">
+			<div class="column1">
+				<div class="header">Контакты</div>
+				<div class="bottom-row"><span class="icons-footer icon-tel"></span><div class="phones">8 (123) 456 78 91<br/>8 (123) 456 78 91</div></div>
+				<div class="bottom-row"><span class="icons-footer icon-mails"></span><div class="emails"><a href="mailto:yourfavoriteshop@mail.ru">yourfavoriteshop@mail.ru</a><br/><a href="mailto:yourfavoriteshop@mail.ru">yourfavoriteshop@mail.ru</a></div></div>
+				<div class="bottom-row"><span class="icons-footer icon-adress"></span><div class="address">г.Москва, ул.Длинная,<br/> дом 5, стр.4, этаж 2</div></div>
+			</div>
+			<div class="column2">
+				<div class="header">О компании</div>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Условия оплаты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="column3">
+				<div class="header">Каталог</div>
+				<ul>
+					<li><a href="#">Для мужчин</a></li>
+					<li><a href="#">Для женщин</a></li>
+					<li><a href="#">Для детей</a></li>
+					<li><a href="#">Обувь</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</div>
+			<div class="column4">
+				<div class="social">
+					<a href="#" class="icons-socials vk"></a>
+					<a href="#" class="icons-socials fb"></a>
+					<a href="#" class="icons-socials tw"></a>
+					<a href="#" class="icons-socials ok"></a>
+					<a href="#" class="icons-socials in"></a>
+					<a href="#" class="icons-socials pi"></a>
+					<a href="#" class="icons-socials gp"></a>
+				</div>
+				<a href="/" class="bottom-logo">
+					<img src="images/logo2.png" alt="" />
+					Интернет-магазин одежды и аксессуаров
+				</a>
+				<div class="slogan">
+					Краткий текст о Вашем интернет-магазине одежды и аксессуаров, содержащий дополнтельную информацию
+				</div>
+				<div class="made_by">
+					Создание сайта <a href="#" target="_blank">LenetNet</a> ®
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

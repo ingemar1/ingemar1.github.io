@@ -1,0 +1,185 @@
+.img_container{
+    overflow: hidden;
+    width: 256px;
+    height: 160px;
+    background: red;
+    
+}
+.showcase-content{
+    background: red !important;
+}
+
+.lenetnet_slider .scroll_button{
+    width: 52px;
+    height: 52px;
+}
+.lenetnet_slider .scroll_right,.lenetnet_slider .scroll_left{
+    width: 52px;
+}
+.lenetnet_slider .scroll_right .scroll_button{
+    right: 0;
+    background: rgba(0, 0, 0, 0.75) url("../images/arrow-lef.png") no-repeat scroll center center;
+}
+.lenetnet_slider .scroll_left .scroll_button{
+    background: rgba(0, 0, 0, 0.75) url("../images/right-arrow.png") no-repeat scroll center center;
+}
+
+#house_gallery{
+    float: left;
+}
+
+#pag_house_slider{
+    margin: 31px 0;
+}
+
+#house_gallery_pag{
+    margin: 0 0 0 5px;
+    position: relative;
+    float: left;
+}
+#house_gallery_pag .pagination{
+    cursor: pointer;
+}
+#house_gallery_pag .butn{
+    width: 100%;
+    height: 31px;
+    position: absolute;
+    cursor: pointer;
+}
+#house_gallery_pag .top{
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65) url("../images/bottom-arrow.png") no-repeat scroll center center;    
+}
+#house_gallery_pag .bottom{
+    top: 0;
+    background: rgba(0, 0, 0, 0.65) url("../images/top-arrow.png") no-repeat scroll center center;    
+}
+
+.float_left:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.float_left > div{
+    
+    float:left;
+    
+}
+
+body{
+    //background: url('../cars_solo_window.jpg') top center;
+}
+
+
+
+
+
+  .descri{
+    width: 820px;
+  }
+  
+#calendar a{
+    float: right;
+    color: #797979;
+}
+#calendar {
+  margin: 0 0 10px 23px;
+    width: 335px;
+    font-family: OpenSansLight;
+  }
+  #calendar h3{
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  #calendar .header {
+    font-size: 18px;
+    margin: 20px 0 20px;
+    width: 100%;
+    }
+    #calendar .header span {
+      //padding: 0 54px;
+      text-transform: lowercase;
+      width: 10px;
+      display: block;
+      width: 47px;
+      float: left;
+      text-align: right;
+      }
+  #calendar .days {
+    
+    margin: 0 0 10px 0px;
+    }
+    #calendar .day:first-child {
+      margin-left: 0px; }
+      
+    #calendar .days.tu .day:first-child {
+      margin-left: 47px; }
+      #calendar .days.we .day:first-child {
+      margin-left: 94px; }
+      #calendar .days.th .day:first-child {
+      margin-left: 141px; }
+      #calendar .days.fr .day:first-child {
+      margin-left: 188px; }
+      #calendar .days.st .day:first-child {
+      margin-left: 235px; }
+      #calendar .days.su .day:first-child {
+      margin-left: 282px; }
+    
+    #calendar .day.b {
+        font-family: OpenSansBold;
+        font-weight:bold;
+    }
+    #calendar .day span {
+        cursor: pointer;
+    }
+    #calendar .day.occ {
+        color: #ccc;
+    }
+     #calendar .day.selector:before{
+        background: url("../images/q_agenda.png") no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 38px;
+    position: absolute;
+    right: -11px;
+    top: -9px;
+    width: 38px;
+    z-index: -1;
+  }
+  #calendar .day {
+    float: left;
+    width: 47px;
+    
+    font-size: 18px;
+    height: 40px;
+    text-align: right;
+    position: relative; }
+    
+    #calendar .day > div {
+      position: absolute; }
+     
+        
+        
+    
+    
+  #calendar .ctrl_buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 210px;
+    margin: 7px auto;
+    cursor: pointer;
+    z-index: 10; }
+  #calendar .scroll-left {
+    background: url('../images/l_arrow.png') no-repeat 0 0;
+    position: absolute;
+    left: -41px;
+    width: 17px;
+    height: 16px;top:-6px;}
+  #calendar .scroll-right {
+    background: url('../images/r_arrow.png') no-repeat;
+    position: absolute;
+    right: -58px;
+    width: 16px;
+    height: 16px;
+    top:-6px; }

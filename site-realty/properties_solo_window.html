@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/aw-showcase.css" />
+<link rel="stylesheet" type="text/css" href="scripts/slider/slider.css" />
+
+<link rel="stylesheet" type="text/css" href="css/style_mich.css" />
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.aw-showcase.js"></script>
+<script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+<script type="text/javascript" src="js/chosenImage.jquery.js"></script>
+<script type="text/javascript" src="scripts/slider/slider.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.js?v=2.1.5.js"></script>
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css?v=2.1.5.css" />
+<script>
+	$(document).ready(function(){
+			$("a.popup_video").click(function() { $.fancybox({'width' : 640, 'height' : 385, 'href' : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'), 'type' : 'swf', 'swf' : { 'wmode' : 'transparent', 'allowfullscreen' : 'true' } }); return false; });
+			$('.card_product-plans a').fancybox();
+	});
+</script>
+</head>
+<body>
+	<header>
+		<div class="header-decor">
+			<div class="container container_black">
+				<div class="header-languages">
+					<a class="header-languages-link" href="">ru</a><span class="header-languages-fraction">/</span><a class="header-languages-link header-languages-active_link" href="">eng</a>
+				</div>
+				<ul class="header-menu clearfix">
+					<li><a href="">PROPERTIE</a></li>
+					<li><a href="">LUXURY CARS</a></li>
+					<li><a href="">YACHTS</a></li>
+					<li class="header-menu-logo"><a href="/"><img src="images/header-logo1.png" alt=""></a></li>
+					<li><a href="">VIP-CONSIERGE</a></li>
+					<li><a href="">CONTACTS</a></li>
+					<li><a href="">CONTACTS</a></li>
+				</ul>
+				<div class="header-wrap_contacts clearfix">
+					<div class="header-contact header-contact_left">+0 (123) 456-78-90</div>
+					<div class="header-contact_center"><a href=""><img src="images/header-logo2.png" alt=""></a></div>
+					<div class="header-contact header-contact_right">info@qdg.com</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-subpage" style="background-image: url('images/header-banner.jpg');">
+			<div class="header-subpage-inside">
+				<div class="breadcrumb">
+					<a href="/"><i class="fa-home"></i></a>
+					<a href=""><span class="breadcrumb-fraction">/</span>properties</a>
+					<a href=""><span class="breadcrumb-fraction">/</span>modern luxury home</a>
+				</div>
+				<div><div class="subpage-title subpage-trapeze">modern luxury home</div></div>
+				<div class="subpage-message subpage-trapeze"><span>a stunning modern day home</span></div>
+			</div>
+		</div>
+	</header>
+	
+	<section class="content">
+		<div class="container">
+			<a class="back_button" href="javascript:history.back()"><i class="icon-arrow_l"></i></a>
+			<div class="clearfix">
+				<div class="col-left">
+					<h2 class="title_h2">224 SUNNY ALLEY</h2>
+					<p class="additional_info">MARBELLA, MALAGA SPAIN</p>
+				</div>
+				<div class="col-right">
+					<a href="https://www.youtube.com/v/-2ZdO1OE0A4?version=3" class="card_product-view popup_video">View Video</a><i class="view-icons fa-video-camera"></i>
+					<a href="#popup_map1" class="card_product-view popup_map">View Map</a><i class="view-icons fa-map-marker"></i>
+					<div id="popup_map1" style="width:700px; height:100%; display: none;">
+						<div id="map" class="map"></div>
+					</div>
+					<p class="card_product-listing_id">LISTING id # 334</p>
+				</div>
+			</div>
+			
+			<script>
+				$(document).ready(function(){
+					slider = new Slider({
+						id:"#house_gallery", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+						width:"916px", // Ширина слайдера
+						height:"572px", // Высота слайдера
+						autoPlay:false, // Начинает ли пролистывать при загруке страицы
+						interval:2000, // Временной интервал между слайдами
+						//left_btn:".scroll_left .scroll_button", // Класс левой кнопки
+						//right_btn:".scroll_right .scroll_button", // Класс правой кнопки
+						action:"Horisontal" 
+						});
+					
+					pag_slider = new Slider({
+						id:"#pag_house_slider", // id того блока, который должен стать слайдером. Есть теоретическая возможность указывать и название класса.
+						width:"257px", // Ширина слайдера
+						height:"510px", // Высота слайдера
+						autoPlay:false, // Начинает ли пролистывать при загруке страицы
+						interval:2000, // Временной интервал между слайдами
+						left_btn:"#house_gallery_pag .bottom", // Класс левой кнопки
+						right_btn:"#house_gallery_pag .top", // Класс правой кнопки
+						action:"ScrollVertical",
+						scrollset: {vit_max:15,accs_beg:1,time_int:40,box_width:160},
+						});
+				});
+			</script>
+			<div class="card_product-slider clearfix">
+				<div id='house_gallery' class='lenetnet_slider'>
+					
+					<div class="slide" rel='id_1'>
+						<div class="showcase-content">
+							1<img src="images/bigslide3.jpg" alt="03" />1
+						</div>
+						
+					</div>
+					<div class="slide" rel='id_2'>
+						<div class="showcase-content">
+							2<img src="images/bigslide3.jpg" alt="03" />2
+						</div>
+						
+					</div>
+					<div class="slide" rel='id_3'>
+						<div class="showcase-content">
+							3<img src="images/bigslide3.jpg" alt="03" />2
+						</div>
+						
+					</div>
+					<div class="slide" rel='id_4'>
+						<div class="showcase-content">
+							4<img src="images/bigslide3.jpg" alt="03" />2
+						</div>
+						
+					</div>
+				</div>
+				<div id="house_gallery_pag">
+					<div class='butn top'></div>
+					<div class='butn bottom'></div>
+					<div id='pag_house_slider' class='lenetnet_slider'>
+						
+						<div class="slide pagination" rel='id_1'>
+							<div class='img_container'><img src="images/slide1.jpg" alt="03" /></div>
+						</div>
+						<div class="slide pagination" rel='id_2'>
+							<div class='img_container'>2</div>
+						</div>
+						<div class="slide pagination" rel='id_3'>
+							<div class='img_container'>3</div>
+						</div>
+						<div class="slide pagination" rel='id_4'>
+							<div class='img_container'>4</div>
+						</div>
+					</div>				
+				</div>
+			</div>
+			
+			<div class="card_product-quick_summary">
+				<div class="quick_summary-title">Quick Summary</div>
+				<table width="100%">
+					<tr>
+						<td align="left"><div class="quick_summary-info quick_summary-properties">Price:</div><div class="quick_summary-info quick_summary-value">$1,299,900</div></td>
+						<td align="justify"><div class="quick_summary-info quick_summary-properties">Type:</div><div class="quick_summary-info quick_summary-value">Flat</div></td>
+						<td align="center"><div class="quick_summary-info quick_summary-properties">Status:</div><div class="quick_summary-info quick_summary-value">Sale</div></td>
+						<td align="center"><div class="quick_summary-info quick_summary-properties">DOM:</div><div class="quick_summary-info quick_summary-value">32</div></td>
+						<td align="center"><div class="quick_summary-info quick_summary-properties">Area:</div><div class="quick_summary-info quick_summary-value">6200 Sq. Ft.</div></td>
+						<td align="center"><div class="quick_summary-info quick_summary-properties">Rooms:</div><div class="quick_summary-info quick_summary-value">6 + 1</div></td>
+						<td align="right"><div class="quick_summary-info quick_summary-properties">Baths:</div><div class="quick_summary-info quick_summary-value">4</div></td>
+					</tr>
+				</table>
+			</div>
+			<div class="headers">Property Description</div>
+			<p class="card_product-description description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean faucibus, tortor eu rutrum vehicula, nulla nisi ullamcorper metus, quis condimentum turpis diam vitae leo. Donec mollis diam eu justo faucibus, at lacinia lectus tincidunt. Nunc elementum, eros at blandit sagittis, sapien ipsum aliquam neque, quis bibendum massa quam ac urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt libero quis purus pellentesque interdum. Maecenas scelerisque accumsan ornare. Praesent gravida magna nec mi hendrerit suscipit. Curabitur egestas ante eget magna auctor ornare.</p>
+			<p class="card_product-description description">Ut ut dictum odio, a luctus turpis. Maecenas lacus est, varius in rutrum eget, gravida at enim. Sed fermentum id ligula eu convallis. In venenatis lectus quis magna lobortis volutpat. Nam auctor ornare urna, efficitur consequat libero iaculis non. Duis pulvinar augue nec pellentesque blandit. Fusce dictum rutrum nibh, eu vulputate odio condimentum in. In hac habitasse platea dictumst. Etiam feugiat lorem sem, ut lobortis turpis posuere id.</p>
+			<div class="headers">Amenities</div>
+			<div class="clearfix">
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Air conditioning</div>
+					<div class="card_product-feature">Family Room</div>
+				</div>
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Dining Room</div>
+					<div class="card_product-feature">Den</div>
+				</div>
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Outdoor Pool</div>
+					<div class="card_product-feature">Indoor Gym</div>
+				</div>
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Cable TV</div>
+					<div class="card_product-feature">Internet</div>
+				</div>
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Balcony</div>
+					<div class="card_product-feature">Outdoor BBQ</div>
+				</div>
+				<div class="col-left card_product-features">
+					<div class="card_product-feature">Outdoor Fireplace</div>
+					<div class="card_product-feature">Roof Terrace</div>
+				</div>
+			</div>
+			<div class="headers card_product-title_plans">Interactive Floor Plans</div>
+			<div class="card_product-plans">
+				<a class="card_product-plan" href="images/bigslide3.jpg"><img src="images/plan1.jpg" height="137px" width="176px" alt=""/><span class="card_product-plans-view">View Floor Plan<i class="fa-angle-right"></i></span></a>
+			</div>
+			<div class="headers">Location</div>
+			<div id="map" class="map"></div>
+			<div class="card_product-social_networks">
+				<div class="social_networks-title">Share this listing</div>
+				<a class="icon-rumb icon-f" href=""></a><a class="icon-rumb icon-t" href=""></a><a class="icon-rumb icon-g" href=""></a><a class="icon-rumb icon-p" href=""></a>
+			</div>
+			<div class="similar_products-header">Similar Properties</div>
+			<div class="clearfix card_product-similar_products">
+				<div class="col-left card_product-similar_products-col">
+					<div class="card_product-similar_products-img"><a href=""><img class="similar_products-img" src="images/The-River-Road-House-6.jpg" alt=""></a></div>
+					<a href="" class="similar_products-title">Luxury family house</a>
+					<p class="card_product-similar_products-description description border_bottom">
+						Aenean pharetra dolor metus, nec consectetur nunc aliquam in. Suspendisse lorem dui, fringilla vitae tortor non, consectetur porttitor sem. Donec nec interdum odio, in hendrerit diam. Nulla dapibus accumsan odio </p>
+					<div class="clearfix">
+						<div class="col-left"><span class="similar_products-price">sale</span><i class="similar_products fa-circle"></i><span class="similar_products-price">$899,900</span></div>
+						<div class="col-right similar_products-price">5200 SQ.FT.</div>
+					</div>
+				</div>
+				<div class="col-left card_product-similar_products-col">
+					<div class="card_product-similar_products-img"><a href=""><img class="similar_products-img" src="images/luxury-homes.jpg" alt=""></a></div>
+					<a href="" class="similar_products-title">sunnyside california home</a>
+					<p class="card_product-similar_products-description description border_bottom">
+						Aenean pharetra dolor metus, nec consectetur nunc aliquam in. Suspendisse lorem dui, fringilla vitae tortor non, consectetur porttitor sem. Donec nec interdum odio, in hendrerit diam. Nulla dapibus accumsan odio Aenean pharetra dolor metus, nec consectetur nunc aliquam in. Suspendisse lorem dui, fringilla vitae tortor non, consectetur porttitor sem. Donec nec interdum odio, in hendrerit diam. Nulla dapibus accumsan odio</p>
+					<div class="clearfix">
+						<div class="col-left"><span class="similar_products-price">sale</span><i class="similar_products fa-circle"></i><span class="similar_products-price">$699,900</span></div>
+						<div class="col-right similar_products-price">4800 SQ.FT.</div>
+					</div>
+				</div>
+				<div class="col-left card_product-similar_products-col">
+					<div class="card_product-similar_products-img"><a href=""><img class="similar_products-img" src="images/modern-Luxury-home.jpg" alt=""></a></div>
+					<a href="" class="similar_products-title">modern Luxury home</a>
+					<p class="card_product-similar_products-description description border_bottom">
+						</p>
+					<div class="clearfix">
+						<div class="col-left"><span class="similar_products-price">sale</span><i class="similar_products fa-circle"></i><span class="similar_products-price">$1,299,900</span></div>
+						<div class="col-right similar_products-price">6200 SQ.FT.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrap_feedback">
+			<div class="container container_feedback">
+				<div class="feedback-question feedback-headers">like this property?</div>
+				<div class="feedback-title feedback-headers">contact the agent</div>
+				<div class="feedback-form">
+					<form>
+						<div><input type="text" class="field_input field" placeholder="Name *"><input type="text" class="field_input field" placeholder="Email address *"><input type="text" class="field_input field" placeholder="Phone Number"></div>
+						<div><textarea class="field field_textarea" placeholder="Message *"></textarea></div>
+						<div class="feedback-btn">
+							<input type="submit" class="btn" value="submit">
+						</div>
+						<div class="footnote">Fields marked with * are required</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="footer-logo"><img src="images/footer-logo.png" alt=""></div>
+		<div class="footer-decor">
+			<div class="footer-inside container">
+				<div class="clearfix">
+					<div class="footer-copyright">
+						© 2015 quintessential development group
+					</div>
+					<ul class="footer-menu clearfix">
+						<li><a href="">MAIN PAGE</a><span class="footer-fraction">/</span></li>
+						<li><a href="">properties</a><span class="footer-fraction">/</span></li>
+						<li><a href="">CARS</a><span class="footer-fraction">/</span></li>
+						<li><a href="">YACHTS</a><span class="footer-fraction">/</span></li>
+						<li><a href="">VIP-CONSIERGE</a><span class="footer-fraction">/</span></li>
+						<li><a href="">CONTACTS</a></li>
+					</ul>
+					<div class="footer-contacts">
+						<i class="icon-tel"></i>+7 (123) 456-78-90
+					</div>
+					<div class="footer-contacts">
+						<i class="icon-message"></i>+info@gdq.com
+					</div>
+					<div class="footer-social_networks footer-contacts">
+						Follow us:<a href="" class="icon-twitter"></a><a href="" class="icon-facebook"></a>
+					</div>
+				</div>
+				<div class="footer-creators">
+					создание сайта <a href="http://lenetnet.ru/" target="_blank">lenetnet.ru</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

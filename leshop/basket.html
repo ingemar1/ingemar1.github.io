@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="library/fancybox/jquery.fancybox.js?v=2.1.5.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="library/fancybox/jquery.fancybox.css?v=2.1.5.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+		<div id="header">
+		<div class="top1">
+			<div class="wrapper">
+				<div class="user">
+					<a href="#"><span class="icons-header icon-user"></span>Вход</a>
+					<a href="#">Регистрация</a>
+				</div>
+				<div class="search">
+					<form action="" method="">
+						<input type="text" name="search" placeholder="Поиск по сайту..."/>
+						<input type="submit" name="submit" class="icons-header" value="" />
+					</form>
+				</div>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Условия оплаты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<hr/>
+			</div>
+		</div>
+		<div class="top2">
+			<div class="wrapper">
+				<div class="basket">
+					<a href="#" class="basket_count"><span class="icons-header icon-basket"><span class="icons-header icon-basket_balloon">12</span></span><span class="basket-text">Ваша корзина</span></a>
+					<div class="basket_header">
+						<div class="basket_header-row clearfix">
+							<div class="col-left">
+								<img src="images/slide1.jpg" class="basket_header-img" alt=""/>
+							</div>
+							<div class="col-left">
+								<a href="#" class="basket_header-title">Название товара</a>
+								<div class="basket_header-price">1 Х 16 700 <span class="rouble">i</span></div>
+							</div>
+						</div>
+						<div class="basket_header-row clearfix">
+							<div class="col-left">
+								<img src="images/slide1.jpg" class="basket_header-img" alt=""/>
+							</div>
+							<div class="col-left">
+								<a href="#" class="basket_header-title">Название товара, которое занимает более двух строк</a>
+								<div class="basket_header-price">1 Х 16 700 <span class="rouble">i</span></div>
+							</div>
+						</div>
+						<div class="clearfix basket_header-result">
+							<div class="col-left">
+								<div class="basket_header-total">Итог 33 400 <span class="rouble">i</span></div>
+							</div>
+							<div class="col-right">
+								<a href="#fancybox_basket" class="btn fancy_basket_btn">в корзину</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a id="fancy_call" class="call" href="#fancybox_call"><span class="icons-header icon-phone"></span><span class="call-text">Заказать звонок</span></a>
+				<div class="phones">8 (123) 456 78 91<br/>8 (123) 456 78 91</div>
+				<a class="logo" href="/">
+					<img src="images/logo.png" alt="" />
+					Интернет-магазин одежды и аксессуаров
+				</a>
+			</div>
+		</div>
+		<div id="fancybox_call" class="fancy_call" style="display: none;">
+			<div class="fancy_title title">Обратный звонок</div>
+			<form action="" method="">
+				<input type="text" placeholder="Имя *" class="field" />
+				<input type="text" placeholder="Телефон *" class="field" />
+				<textarea class="field textarea" placeholder="Комментарий"></textarea>
+				<input type="submit" value="отправить" class="btn btn_input"/>
+			</form>
+		</div>
+		<div class="top3">
+			<div class="wrapper">
+				<a href="#" class="home"><span class="icons-header icon-home"></span></a>
+				<ul class="menu">
+					<li id="menu1"><a href="#">Для мужчин</a></li>
+					<li id="menu2"><a href="#">Для женщин</a></li>
+					<li id="menu3"><a href="#">Для детей</a></li>
+					<li><a href="#">Обувь</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</div>
+			<div class="under_menu" id="sub_menu1">
+				<div class="wrapper clearfix">
+					<ul class="under_menu-item">
+						<li><a href="#">Верхняя одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пальто</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Плащи</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пуховики</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Ветровки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Куртки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">Спортивная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Футболки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Поло (при наведении)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки (при нажатии)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Спортивне костюмы</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">повседневная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джинсы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Рубашки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Брюки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки и олимпийки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Носки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#"></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Нижнее белье</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Костюмы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пиджаки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джемперы и кардиганы</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="under_menu" id="sub_menu2">
+				<div class="wrapper clearfix">
+					<ul class="under_menu-item">
+						<li><a href="#">Верхняя одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пальто</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Плащи</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пуховики</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Ветровки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Куртки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">Спортивная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Футболки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Поло (при наведении)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки (при нажатии)</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Спортивне костюмы</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#">повседневная одежда</a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джинсы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Рубашки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Брюки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Толстовки и олимпийки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Носки</span></a></li>
+					</ul>
+					<ul class="under_menu-item">
+						<li><a href="#"></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Нижнее белье</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Костюмы</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Пиджаки</span></a></li>
+						<li><a href="#"><i class="icons-braces"></i><span>Джемперы и кардиганы</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Корзина</a></li>
+			</ul>
+		</div>
+		<h1>Корзина</h1>
+		<div class="clearfix">
+			<ul class="col-left basket_tabs">
+				<li id="t1">Готовые к заказу (2)</li>
+				<li id="t2">Отложенные (1)</li>
+			</ul>
+			<div class="col-right">
+				<a href="javascript:window.print();" class="basket_btns print">распечатать <span class="icons-basket icon-print"></span></a>
+				<a href="#" class="basket_btns remove">удалить все товары <span class="icons-basket icon-cross"></span></a>
+			</div>
+		</div>
+		<div class="basket_table" id="tabs_t1">
+			<div class="table-header clearfix">
+				<div class="table_img col-left">Фото</div>
+				<div class="table_title col-left">Наименование </div>
+				<div class="table_price col-left">Цена</div>
+				<div class="table_quentity col-left">Количество</div>
+				<div class="table_total col-left">Итог</div>
+				<div class="table_actions col-left">Действия</div>
+			</div>
+			<div class="table-row basket_table-row clearfix">
+				<div class="table_img table_col col-left"><img src="images/slide1.jpg" alt=""/></div>
+				<div class="table_title table_col col-left">
+					<div class="basket_table-title">
+						Название товара, которое занимает более одной строки
+					</div>
+					<div class="table_prop">
+						Размер: <div class="prop-square">s</div>
+						Цвет:<div class="prop-square" style="background-color:#757754;"></div>
+					</div>
+				</div>
+				<div class="table_price table_col col-left">
+					<div class="table_price_old">17 700<span class="rouble">i</span></div>
+					<div class="table_price">16 700<span class="rouble">i</span></div>
+				</div>
+				<div class="table_quentity table_col col-left">
+					<div class="prop-quantity clearfix">
+						<a class="quantity quantity_btn" href="">-</a>
+						<input class="quantity quantity-entry" type="text" value="1">
+						<a class="quantity quantity_btn" href="">+</a>
+					</div>
+				</div>
+				<div class="table_total table_col col-left">
+					<div class="table_price">33 400<span class="rouble">i</span></div>
+				</div>
+				<div class="table_actions table_col col-left">
+					<a href="#"><span class="icons-basket icon-heart"></span></a>
+					<a href="#"><span class="icons-basket icon-cross"></span></a>
+				</div>
+			</div>
+			<div class="table-row basket_table-row clearfix">
+				<div class="table_img table_col col-left"><img src="images/slide1.jpg" alt=""/></div>
+				<div class="table_title table_col col-left">
+					<div class="basket_table-title">
+						Название товара
+					</div>
+				</div>
+				<div class="table_price table_col col-left">
+					<div class="table_price_old">17 700<span class="rouble">i</span></div>
+					<div class="table_price">16 700<span class="rouble">i</span></div>
+				</div>
+				<div class="table_quentity table_col col-left">
+					<div class="prop-quantity clearfix">
+						<a class="quantity quantity_btn" href="">-</a>
+						<input class="quantity quantity-entry" type="text" value="1">
+						<a class="quantity quantity_btn" href="">+</a>
+					</div>
+				</div>
+				<div class="table_total table_col col-left">
+					<div class="table_price">33 400<span class="rouble">i</span></div>
+				</div>
+				<div class="table_actions table_col col-left">
+					<a href="#"><span class="icons-basket icon-heart"></span></a>
+					<a href="#"><span class="icons-basket icon-cross"></span></a>
+				</div>
+			</div>
+			<div class="basket_table-bottom clearfix">
+				<div class="col-left">
+					<form method="" action="">
+						<input type="text" placeholder="промокод на скидку" class="field"/><input type="submit" value="" class="btn-img"/>
+					</form>
+					<div class="title7">Ваша скидка составила: 4 000 <span class="rouble">i</span></div>
+				</div>
+				<div class="col-right">
+					<span class="total_row">Итого: </span><span class="total_row-price">50 100<span class="rouble">i</span></span>
+					<input type="submit" value="продолжить покупки" class="btn btn_input"/>
+					<input type="submit" value="ОФОРМИТЬ ЗАКАЗ" class="btn btn_input btn_full"/>
+				</div>
+			</div>
+		</div>
+		<div class="basket_table" id="tabs_t2">
+			<div class="table-header clearfix">
+				<div class="table_img col-left">Фото</div>
+				<div class="table_title col-left">Наименование </div>
+				<div class="table_price col-left">Цена</div>
+				<div class="table_quentity col-left">Количество</div>
+				<div class="table_total col-left">Итог</div>
+				<div class="table_actions col-left">Действия</div>
+			</div>
+			<div class="table-row basket_table-row clearfix">
+				<div class="table_img table_col col-left"><img src="images/slide1.jpg" alt=""/></div>
+				<div class="table_title table_col col-left">
+					<div class="basket_table-title">
+						Название товара, которое занимает более одной строки
+					</div>
+					<div class="table_prop">
+						Размер: <div class="prop-square">s</div>
+						Цвет:<div class="prop-square" style="background-color:#757754;"></div>
+					</div>
+				</div>
+				<div class="table_price table_col col-left">
+					<div class="table_price_old">17 700<span class="rouble">i</span></div>
+					<div class="table_price">16 700<span class="rouble">i</span></div>
+				</div>
+				<div class="table_quentity table_col col-left">
+					<div class="prop-quantity clearfix">
+						<a class="quantity quantity_btn" href="">-</a>
+						<input class="quantity quantity-entry" type="text" value="1">
+						<a class="quantity quantity_btn" href="">+</a>
+					</div>
+				</div>
+				<div class="table_total table_col col-left">
+					<div class="table_price">33 400<span class="rouble">i</span></div>
+				</div>
+				<div class="table_actions table_col col-left">
+					<a href="#"><span class="icons-basket icon-basket2"></span></a>
+					<a href="#"><span class="icons-basket icon-cross"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_spacer"></div>
+</div>
+<div class="footer">
+	<div class="bottom1">
+		<div class="wrapper">
+			<div class="left">
+				Подпишитесь на новости и первыми получайте информацию о всех наших новинках и скидках!
+			</div>
+			<div class="gt"></div>
+			<div class="right">
+				<form action="#" method="post">
+					<input type="text" placeholder="Введите Ваш e-mail..." />
+					<!--<input type="submit" value="" />-->
+					<a href="#fancybox_mail" id="fancy_mail" class="icons-footer icon-envelope2"></a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="fancybox_mail" class="fancy_mail" style="display: none;">
+		<div class="fancy_title title">Спасибо!</div>
+		<div class="fancy_text">
+			Вы подписались на рассылку наших новостей, чтобы первыми узнавать обо всех акциях и скидках.
+			<br />
+			<br />
+			<span>На Ваш почтовый ящик придёт письмо с подтверждением подписки.</span>
+		</div>
+	</div>
+	<div class="bottom2">
+		<div class="wrapper">
+			<div class="column1">
+				<div class="header">Контакты</div>
+				<div class="bottom-row"><span class="icons-footer icon-tel"></span><div class="phones">8 (123) 456 78 91<br/>8 (123) 456 78 91</div></div>
+				<div class="bottom-row"><span class="icons-footer icon-mails"></span><div class="emails"><a href="mailto:yourfavoriteshop@mail.ru">yourfavoriteshop@mail.ru</a><br/><a href="mailto:yourfavoriteshop@mail.ru">yourfavoriteshop@mail.ru</a></div></div>
+				<div class="bottom-row"><span class="icons-footer icon-adress"></span><div class="address">г.Москва, ул.Длинная,<br/> дом 5, стр.4, этаж 2</div></div>
+			</div>
+			<div class="column2">
+				<div class="header">О компании</div>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Условия оплаты</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="column3">
+				<div class="header">Каталог</div>
+				<ul>
+					<li><a href="#">Для мужчин</a></li>
+					<li><a href="#">Для женщин</a></li>
+					<li><a href="#">Для детей</a></li>
+					<li><a href="#">Обувь</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</div>
+			<div class="column4">
+				<div class="social">
+					<a href="#" class="icons-socials vk"></a>
+					<a href="#" class="icons-socials fb"></a>
+					<a href="#" class="icons-socials tw"></a>
+					<a href="#" class="icons-socials ok"></a>
+					<a href="#" class="icons-socials in"></a>
+					<a href="#" class="icons-socials pi"></a>
+					<a href="#" class="icons-socials gp"></a>
+				</div>
+				<a href="/" class="bottom-logo">
+					<img src="images/logo2.png" alt="" />
+					Интернет-магазин одежды и аксессуаров
+				</a>
+				<div class="slogan">
+					Краткий текст о Вашем интернет-магазине одежды и аксессуаров, содержащий дополнтельную информацию
+				</div>
+				<div class="made_by">
+					Создание сайта <a href="#" target="_blank">LenetNet</a> ®
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
