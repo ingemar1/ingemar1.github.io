@@ -1,0 +1,131 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+
+//Extra large: ≥1200px
++media-breakpoint-down(xl)
+	.video
+		max-width: 700px
+
+	.card-columns
+    column-count: 4
+
+
+//Large: ≥992px
++media-breakpoint-down(lg)
+
+
+//Medium: ≥768px
++media-breakpoint-down(md)	
+	.footer__menu
+		li
+			margin: 3px 35px 0 0
+
+	.card-columns
+    column-count: 3
+
+
+//Small: ≥576px
++media-breakpoint-down(sm)
+	.header
+    padding: 35px 40px
+
+	.banner__title
+		font: bold 50px/65px Chekhovskoy
+
+	.banner__subtitle
+		font: 27px LydianMTCyrillic
+
+	.talented-img
+		margin: 28px 0 0
+
+	.egg-img
+		margin: 0
+
+	.video-indent 
+    margin: 11px 0 63px
+
+ .work-img
+  	margin: 26px 0 0
+
+ .lastYears-img
+		margin: 29px 0 0
+
+	.businessAlive-indent
+		margin: 50px 0 0
+  
+ .businessAlive-img
+		margin: 30px 0 0  
+
+	.museum__description
+		margin: 0 30px 25px
+
+	.footer__menu
+		margin: 0 0 30px 0
+		li
+			margin: 3px 0 0 25px
+			font-size: 15px
+
+	.product__title
+		margin: 43px 0 26px 0
+
+	.card-columns
+    column-count: 2
+
+//Extra small: >0
++media-breakpoint-down(xs)
+	.banner__title
+		font: bold 35px/65px Chekhovskoy
+
+	.museum
+		padding: 40px 0 40px
+
+	.museum__inner
+		margin-top: 0
+
+	.museum__title
+		margin-bottom: 20px
+
+	.museum__description
+		margin: 0 30px 17px
+
+	.museum-indent
+		margin: 78px 0 0
+
+	.main-slider
+  	margin-top: 50px
+
+	.product__title
+		font: bold 18px Chekhovskoy
+
+	.card-columns
+    column-count: 1
+
+
+//Small: <=390px
+@media screen and (max-width: 390px)
+	.banner__title
+		font: bold 24px/50px Chekhovskoy
+	
+	.banner__subtitle
+		font: 23px LydianMTCyrillic
+
+	
+/*==========  Mobile First  ==========*/
+
+//Extra small: <576px
++media-breakpoint-up(xs)
+
+//Small: ≤576px
++media-breakpoint-up(sm)
+
+//Medium: ≤768px
++media-breakpoint-up(md)
+
+//Large: ≤992px
++media-breakpoint-up(lg)
+
+//Extra large: ≤1200px
++media-breakpoint-up(xl)

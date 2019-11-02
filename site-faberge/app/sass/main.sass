@@ -1,0 +1,710 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "reset"
+
+//::placeholder
+//color: #000000
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	color: #3c3c42
+	min-width: 414px
+	position: relative
+	line-height: 26px
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			border: #8b8b8b 1px solid
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left
+
+.float-left
+	float: left
+
+.float-right
+	float: right
+
+.clearfix
+	&:after
+		content: ""
+		display: block
+		height: 0
+		clear: both
+		visibility: hidden
+
+@mixin border-radius($radius)
+	-khtml-border-radius: $radius
+	-moz-border-radius: $radius
+	-webkit-border-radius: $radius
+	border-radius: $radius
+
+.border20radius
+	+border-radius(20px)
+
+@mixin background-size($value)
+	-webkit-background-size: $value
+	-moz-background-size: $value
+	-o-background-size: $value
+	background-size: $value
+
+.background-cover
+	+background-size(cover)
+
+.background-contain
+	+background-size(contain)
+
+@mixin transition($cssProperty, $duration, $timingFunction)
+	-webkit-transition: $cssProperty $duration $timingFunction
+	-moz-transition: $cssProperty $duration $timingFunction
+	-o-transition: $cssProperty $duration $timingFunction
+	transition: $cssProperty $duration $timingFunction
+
+.transitionRight
+	+transition(right, 0.4s, ease)
+
+@mixin transformRotate($angle)
+	-webkit-transform: rotate($angle)
+	-o-transform: rotate($angle)
+	-ms-transform: rotate($angle)
+	-moz-transform: rotate($angle)
+	transform: rotate($angle)
+
+.transformRotate45
+	+transformRotate(45deg)
+
+.transformRotate-45
+	+transformRotate(-45deg)
+
+.text-dec-none
+		text-decoration: none
+		&:hover
+			text-decoration: none
+
+/*.underline
+		text-decoration: underline
+		&:hover
+			color: $link*/
+			
+
+.menu
+	position: absolute
+	top: 0
+	right: -100%
+	z-index: 100
+	width: 346px
+	height: 100%
+	background: #f3f2f2
+
+	&.show 
+		right: 0 
+
+.menu__close
+	position: absolute
+	top: 21px
+	right: 20px
+	background: url('../img/icon-close.png')
+	width: 14px
+	height: 14px
+	cursor: pointer
+
+.has-childs
+	cursor: pointer
+	&.opened
+		background: #2a303c
+		& > a
+			color: #ffffff !important
+
+.arrows-vertical 
+	&:before
+		content: ""
+		position: absolute 
+		top: 15px 
+		right: 20px 
+		background: url('../img/arrows_vertical2.png') 
+		background-repeat: no-repeat 
+		width: 16px 
+		height: 12px 
+
+.arrow-down
+	&:before
+		background-position: 0px -12px
+
+.arrow-up
+	&:before
+		background-position: 0px 0px
+
+.menu__inner
+	padding: 40px 0 22px
+	& > li
+			position: relative
+			padding: 10px 0 10px
+			> a
+				display: block
+				padding: 0 20px 0 70px
+				font: bold 16px $default-font
+				color: #000000
+				text-transform: uppercase
+
+.submenu
+	display: none
+	padding: 20px 0 20px
+	background: #2a303c
+	li
+		padding: 10px 20px 10px 70px
+		a
+			color: #f9cd4d
+
+		&:hover
+			background: #cba744
+			a
+				color: $link
+				font-weight: bold
+				text-decoration: none
+
+
+.menu__bottom
+	margin: 0 18px 32px 70px
+
+.menu__search
+	position: relative
+	margin: 0 0 47px 0
+
+.menu__search__button
+	position: absolute
+	top: 12px
+	right: 12px
+	background: url('../img/icon-search.png')
+	background-repeat: no-repeat
+	width: 16px
+	height: 16px
+		
+.button
+	border: none
+	outline: 0
+
+.input
+	display: block
+	width: 99%
+	padding: 5px 10px 5px 10px
+	border: 1px solid #cba744
+	color: #cdab4c
+
+.input:-moz-placeholder
+	color: #cdab4c
+	opacity: 1
+
+.input::-moz-placeholder
+	color: #cdab4c
+	opacity: 1
+
+.input::-webkit-input-placeholder
+	color: #cdab4c
+
+.input:-ms-input-placeholder
+	color: #cdab4c
+
+.input::-ms-input-placeholder
+	color: #cdab4c
+
+.input::placeholder
+	color: #cdab4c
+	opacity: 1
+
+.soc-networks-black
+	display: inline-block
+	margin: 0 9px 0 0
+	background-image: url('../img/social_networks2.png')
+	background-repeat: no-repeat
+	width: 25px
+	height: 25px
+
+.icon-vk-black
+	background-position: 0px -25px
+
+.icon-youtube-black
+	background-position: 0px 0px
+
+.icon-facebook-black
+	background-position: 0px -75px
+
+.icon-instagram-black
+	background-position: 0px -50px
+
+
+
+.banner
+	width: 100%
+	height: 100vh
+	min-height: 780px
+	background-position: center
+	background-repeat: no-repeat
+
+.header
+	padding: 35px 80px
+
+.header-bar
+	background: #2a303c
+
+.banner__title
+	font: bold 55px/65px Chekhovskoy
+	text-transform: uppercase
+	color: #f9cd4d
+
+	span
+		color: #fffeff
+
+.banner__subtitle
+	margin-top: 20px
+	font: 36px LydianMTCyrillic
+	color: #f1f1f1
+
+.hamburger-wrap
+	margin-top: 9px
+	cursor: pointer
+	
+.hamburger
+	display: inline-block
+	
+.hamburger__inner
+	width: 20px
+	height: 2px
+	margin-bottom: 3px
+	background: #e3e3e3
+
+.header__menu
+	display: inline-block
+	vertical-align: top
+	margin-left: 10px
+	font: bold 14px ProximaNova
+	color: #e3e3e3
+	text-transform: uppercase
+
+.stamp
+	margin: 10px 0 43px
+	p
+		font: 24px/24px Chekhovskoy
+		color: #000000
+
+		span
+			font-family: ProximaNova
+
+.rhomb
+	width: 58px
+	height: 58px
+	border: 1px solid #5c470d
+	margin: 0 auto 35px
+	font: bold 20px ProximaNova
+	color: #cba744
+	
+.rhomb__year
+	padding-top: 11px
+
+.title
+	font: 24px LydianMTCyrillic
+	color: #765d17
+
+.description
+	margin-top: 20px
+	font: 15px/24px ProximaNova
+
+	em
+		font-style: italic
+
+	span
+		font-weight: bold
+		color: #cba744
+
+.indent
+	margin: 60px 0 0
+
+.childhood-img
+	margin: 30px 0 0
+
+.talented-img
+	margin: 61px 0 0
+
+.egg-img
+	margin: 53px 0 0
+
+
+.video
+	position: relative
+	cursor: pointer
+	
+.overlay
+	position: absolute
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(42, 48, 60, 0.5)
+
+.overlay-black
+	background: rgba(0, 0, 0, 0.61)
+
+.play-button
+	position: absolute
+	left: 50%
+	margin-left: -22px
+	top: 50%
+	margin-top: -22px
+	background: url(../img/play_button.png)
+	width: 45px
+	height: 45px
+
+#video
+	display: none
+
+.video-indent
+	margin: 38px 0 80px
+
+.work-img
+	margin: 94px 0 0
+
+
+.main-slider
+  margin-top: 90px
+
+.main-slide 
+	height: 100% 
+	overflow: hidden 
+	display: flex 
+	flex-direction: column 
+	justify-content: center 
+	align-items: center 
+	transform: scale(0.9)  
+	transition: transform 0.4s ease-in-out
+
+	&.slick-current 
+		transform: scale(1) 
+		.slider__img
+			&:before
+				background: rgba(42, 48, 60, 0)
+				transition: background 0.4s ease-in-out
+
+		.slider__description 
+			display: block 
+			margin: 15px 0 
+
+	
+.slider__description
+	display: none
+	span
+		font-weight: bold
+		color: #765d17
+
+.slider__img
+	position: relative
+	display: block
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(42, 48, 60, 0.6)
+
+
+.slide-controls
+	position: relative
+	margin-bottom: 48px
+	.arrows
+		top: 5px
+
+.slide-controls-number
+	display: inline-block
+	font-size: 20px
+
+.slide-controls-active
+	font-weight: bold
+
+.slide-controls-from
+	padding: 0 5px
+	font-weight: bold
+	font-size: 18px
+
+
+
+
+
+.arrows
+	position: absolute
+	display: inline-block
+	background: url('../img/arrows.png')
+	background-repeat: no-repeat
+	width: 11px
+	height: 16px
+	cursor: pointer
+
+.arrow-l
+	background-position: 0px 0px
+	left: 50%
+	margin-left: -70px
+
+.arrow-r
+	background-position: -11px 0px
+	right: 50%
+	margin-right: -70px
+
+.product__arrow-l
+	background-position: 0px 0px
+	left: -14px
+	top: 50%
+
+.product__arrow-r
+	background-position: -11px 0px
+	right: -14px
+	top: 50%
+
+.lastYears-img
+	margin: 124px 0 0
+
+.businessAlive-indent
+	margin: 80px 0 0
+
+
+.museum
+	position: relative
+	padding: 69px 0 43px
+	max-height: 886px
+	min-height: 669px
+	background-position: center
+	background-repeat: no-repeat
+	overflow: hidden
+	a
+		text-decoration: underline
+		color: #ffffff
+
+.museum__title
+	margin-bottom: 29px
+	font: 30px Chekhovskoy
+	color: #f9cd4d
+	text-transform: uppercase
+
+.museum__description
+	margin: 0 0 25px
+	font: 15px/24px $default-font
+	color: #ffffff
+
+.museum-indent
+	margin: 78px 0
+
+.museum__inner
+	margin-top: 50px
+
+
+.footer
+	padding: 42px 0
+	background: #2a303c
+
+.footer__menu
+	li
+		display: inline-block
+		margin: 3px 68px 0 0
+		text-transform: uppercase
+	a
+		color: #e3e3e3
+
+.soc-networks
+	display: inline-block
+	margin: 0 0 0 9px
+	background-image: url('../img/social_networks.png')
+	background-repeat: no-repeat
+	width: 25px
+	height: 25px
+
+.icon-vk
+	background-position: 0px -25px
+
+.icon-youtube
+	background-position: 0px 0px
+
+.icon-facebook
+	background-position: 0px -75px
+
+.icon-instagram
+	background-position: 0px -50px
+
+/*---------------------------------------------------*/
+
+.breadcrumbs
+	margin: 44px 0 50px
+	ul 
+			li 
+				& + li 
+					&:before 
+						content: ""
+						display: inline-block 
+						background: url('../img/marker.png')
+						width: 5px
+						height: 5px
+						margin: 5px 8px 2px 4px
+
+.breadcrumbs__item
+	display: inline-block
+
+	a
+		color: #000000
+
+
+.product
+	margin: 20px 0 57px
+
+.product__title
+	margin: 0 0 26px 0
+	font: bold 19px Chekhovskoy
+	color: #765d17
+	text-transform: uppercase
+
+.product__characteristics
+	margin: 0 0 21px 0
+	font: 15px/24px $default-font
+
+	strong
+		font: bold 16px $default-font
+		color: #000000
+	p
+		margin: 6px 0 0 0
+
+.slider__product
+	margin-bottom: 30px
+
+.slider-nav__product
+	.slick-slide
+		max-width: 232px
+		max-height: 143px
+		margin: 0 4px
+
+.fotorama__img
+	width: 100% !important
+	left: 0 !important
+
+
+.category
+  width: 100%
+  margin-right: auto
+  margin-left: auto
+
+.category__item
+	position: relative
+	display: flex
+	border: 2px solid #252b36
+	width: 100%
+	img
+		width: 100%
+
+
+	span
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-right: -50%
+		transform: translate(-50%, -50%)
+		text-transform: uppercase
+		color: #ffffff
+
+	&:before 
+		content: ""
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba(34, 39, 48, 0.86)
+
+.category__item-active
+	&:before
+		background: rgba(34, 39, 48, 0.6)
+
+
+
+.catalog
+	.card
+		border: none
+
+.catalog__inner
+	position: relative
+
+.catalog__item-hover
+	display: none
+	position: absolute
+	top: 49%
+	left: 50%
+	margin-right: -50%
+	-webkit-transform: translate(-50%, -49%)
+	-ms-transform: translate(-50%, -49%)
+	transform: translate(-50%, -49%)
+	color: #cba744
+
+	a
+		display: inline-block
+		margin: 35px 0 0
+		padding: 11px 32px
+		text-transform: uppercase
+		font-weight: bold
+		color: #cba744
+		border: 1px solid #cba744
+
+.catalog__item-hover__text
+	span
+		font-weight: bold
+
+.catalog__item
+	img
+		width: 100%
+
+
+.catalog__inner
+	&:hover
+		.catalog__item-hover
+			display: block
+
+		&:before 
+			content: ""
+			position: absolute
+			top: 0;
+			width: 100%
+			height: 100%
+			background: rgba(34, 39, 48, 0.95)
+
+.catalog__more-wrap
+	margin: 31px 0 50px
+
+.catalog__more
+	display: inline-block
+	padding: 13px 39px
+	background: #cba744
+	text-transform: uppercase
+	font-weight: bold
+	color: #ffffff
+
+	&:hover
+	 color: #ffffff
+
+
+
+
+@import "media" // Always at the end
