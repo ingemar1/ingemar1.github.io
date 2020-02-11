@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<link rel="stylesheet" href="css/libs.min.css">-->
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row header align-items-center">
+			<div class="col-12 col-md-10">	
+				<ul class="header__menu text-center">
+					<li><span class="icons icon-work"></span><a href="#">Дела</a></li>
+					<li class="menu__item-active"><span class="icons icon-search-blue"></span><a href="#">Рабочее пространство</a></li>
+					<li><span class="icons icon-twoBooks"></span><a href="#">Библиотека <span class="icon-arrow-down"></span></a></li>
+					<li><span class="icons icon-search"></span><a href="#">Options</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-2">
+				<select class="select-authorization" name="state">
+				  <option>dbAdmin (Администратор)</option>
+				  <option>admin(Администратор)</option>
+				</select>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="underMenu">
+					<ul>
+						<li class="menu__item-active"><a href="#">Рабочее пространство</a></li>
+						<li><a href="#">Поиск файлов</a></li>
+						<li><a href="#">Поиск по содержимому</a></li>
+						<li><a href="#">Карта</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-12 col-xl-3">
+				<div class="filters">
+					<form>
+						<div class="clearfix">
+							<h2 class="title float-left">Фильтры</h2>
+							<button class="float-right btn-noBackground border3radius" type="reset">Сбросить</button>
+						</div>
+						<div class="filters__inner border1 border4radius">
+							<div><input type="text" name="" placeholder="Поиск по описанию" class="input filters__input-search border3radius"></div>
+							<div class="filters__inputs">
+								<input type="text" name="" placeholder="От" class="input filters__input-range border3radius">
+								<input type="text" name="" placeholder="До" class="input filters__input-range border3radius">
+							</div>
+							<ul class="filter">
+								<li class="clearfix">
+									<input type="checkbox" id="filterBusiness" class="checkbox">
+									<label class="filter-icon_check" for="filterBusiness"></label>
+									<span class="icon-next"></span>
+									<span class="icons-filters icon-document"></span>
+									<span class="checkbox_value">Дела</span>
+									<div class="filter__quantity float-right border3radius">0 / 3</div>
+									<ul>
+										<div class="filter__search">
+											<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+										</div>
+										<li>
+											<div class="filter__list">
+												<input type="checkbox" id="filterBusiness1" class="checkbox">
+												<label class="filter-icon_check" for="filterBusiness1"></label>
+												<span class="icons-filters icon-document"></span>
+												<span class="checkbox_value">28.01.2020 17:09:13</span>
+												<div class="float-right">2,285</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="clearfix">
+									<input type="checkbox" id="filterPerson" class="checkbox">
+									<label class="filter-icon_check" for="filterPerson"></label>
+									<span class="icon-next"></span>
+									<span class="icons-filters icon-contact"></span>
+									<span class="checkbox_value">Персоны</span>
+									<div class="filter__quantity float-right border3radius">0 / 1</div>
+									<ul>
+										<div class="filter__search">
+											<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+										</div>
+										<li>
+											<div class="filter__list">
+												<input type="checkbox" id="filterPerson1" class="checkbox">
+												<label class="filter-icon_check" for="filterPerson1"></label>
+												<span class="icons-filters icon-contact"></span>
+												<span class="checkbox_value">admin1</span>
+												<div class="float-right">1</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="clearfix">
+									<input type="checkbox" id="filterDevices" class="checkbox">
+									<label class="filter-icon_check" for="filterDevices"></label>
+									<span class="icon-next"></span>
+									<span class="icons-filters icon-device"></span>
+									<span class="checkbox_value">Устройства</span>
+									<div class="filter__quantity float-right border3radius">0 / 2</div>
+									<ul>
+										<div class="filter__search">
+											<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+										</div>
+										<li>
+											<div class="filter__list">
+												<input type="checkbox" id="filterDevices1" class="checkbox">
+												<label class="filter-icon_check" for="filterDevices1"></label>
+												<span class="icons-filters icon-device"></span>
+												<span class="checkbox_value">Apple Iphone 7 new</span>
+												<div class="float-right">2,285</div>
+											</div>
+										</li>
+										<li>
+											<div class="filter__list">
+												<input type="checkbox" id="filterDevices2" class="checkbox">
+												<label class="filter-icon_check" for="filterDevices2"></label>
+												<span class="icons-filters icon-device"></span>
+												<span class="checkbox_value">Apple zip (image_archive)</span>
+												<div class="float-right">5</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="clearfix">
+									<input type="checkbox" id="filterCategories" class="checkbox">
+									<label class="filter-icon_check" for="filterCategories"></label>
+									<span class="icon-next"></span>
+									<span class="icons-filters icon-note"></span>
+									<span class="checkbox_value">Категории</span>
+									<div class="filter__quantity float-right border3radius">0 / 21</div>
+									<ul>
+										<div class="filter__search">
+											<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+										</div>
+										<li>
+											<input type="checkbox" id="filterCategories1" class="checkbox">
+											<label class="filter-icon_check" for="filterCategories1"></label>
+											<span class="icon-next"></span>
+											<span class="icons-filters icon-message"></span>
+											<span class="checkbox_value">Сообщения</span>
+											<div class="float-right">3,975,424</div>
+											<ul>
+												<li>
+													<input type="checkbox" id="filterMessage1" class="checkbox">
+													<label class="filter-icon_check" for="filterMessage1"></label>
+													<span class="icons-filters icon-message"></span>
+													<span class="checkbox_value">Прочитанные</span>
+													<div class="float-right">3</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<input type="checkbox" id="filterGeo" class="checkbox">
+											<label class="filter-icon_check" for="filterGeo"></label>
+											<span class="icon-next"></span>
+											<span class="icons-filters icon-places"></span>
+											<span class="checkbox_value">Геопозиция</span>
+											<div class="float-right">1,966,862</div>
+											<ul>
+												<li>
+													<input type="checkbox" id="filterGeo1" class="checkbox">
+													<label class="filter-icon_check" for="filterGeo1"></label>
+													<span class="icons-filters icon-places"></span>
+													<span class="checkbox_value">Россия</span>
+													<div class="float-right">3</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<input type="checkbox" id="filterFile" class="checkbox">
+											<label class="filter-icon_check" for="filterFile"></label>
+											<span class="icon-next"></span>
+											<span class="icons-filters icon-file"></span>
+											<span class="checkbox_value">Файлы</span>
+											<div class="float-right">1,229,679</div>
+											<ul>
+												<li>
+													<input type="checkbox" id="filterFile1" class="checkbox">
+													<label class="filter-icon_check" for="filterFile1"></label>
+													<span class="icons-filters icon-file"></span>
+													<span class="checkbox_value">Документ1</span>
+													<div class="float-right">3</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<input type="checkbox" id="filterContact" class="checkbox">
+											<label class="filter-icon_check" for="filterContact"></label>
+											<span class="icon-next"></span>
+											<span class="icons-filters icon-contact"></span>
+											<span class="checkbox_value">Контакты</span>
+											<div class="float-right">1,229,679</div>
+											<ul>
+												<li>
+													<input type="checkbox" id="filterContact1" class="checkbox">
+													<label class="filter-icon_check" for="filterContact1"></label>
+													<span class="icons-filters icon-contact"></span>
+													<span class="checkbox_value">Другие контакты</span>
+													<div class="float-right">3</div>
+												</li>
+												<li>
+													<input type="checkbox" id="filterContact2" class="checkbox">
+													<label class="filter-icon_check" for="filterContact2"></label>
+													<span class="icons-filters icon-contact"></span>
+													<span class="checkbox_value">384,401</span>
+													<div class="float-right">16</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="clearfix">
+									<input type="checkbox" id="filterKeyEvidence" class="checkbox">
+									<label class="filter-icon_check" for="filterKeyEvidence"></label>
+									<span class="icons-filters icon-star2"></span>
+									<span class="checkbox_value">Ключевые доказательства</span>
+									<div class="filter__quantity float-right border3radius">0</div>
+								</li>
+							</ul>
+						</div>
+						<h2 class="title">Атрибуты</h2>
+						<div class="filters__inner">
+							<ul class="filter">
+									<li class="clearfix">
+										<input type="checkbox" id="filterDirection" class="checkbox">
+										<label class="filter-icon_check" for="filterDirection"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-direction"></span>
+										<span class="checkbox_value">Направления</span>
+										<div class="float-right">0 / 6</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection1" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection1"></label>
+													<span class="icons-filters icon-withOutDirection"></span>
+													<span class="checkbox_value">Без направления</span>
+													<div class="float-right">10,135,872</div>
+												</div>
+											</li>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection2" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection2"></label>
+													<span class="icons-filters icon-inc"></span>
+													<span class="checkbox_value">Входящие</span>
+													<div class="float-right">1,210,586</div>
+												</div>
+											</li>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection3" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection3"></label>
+													<span class="icons-filters icon-out"></span>
+													<span class="checkbox_value">Исходящие</span>
+													<div class="float-right">220,263</div>
+												</div>
+											</li>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection4" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection4"></label>
+													<span class="icons-filters icon-missed"></span>
+													<span class="checkbox_value">Пропущенные</span>
+													<div class="float-right">10,372</div>
+												</div>
+											</li>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection5" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection5"></label>
+													<span class="icons-filters icon-failed"></span>
+													<span class="checkbox_value">Отклоненные</span>
+													<div class="float-right">6,819</div>
+												</div>
+											</li>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterDirection6" class="checkbox">
+													<label class="filter-icon_check" for="filterDirection6"></label>
+													<span class="icons-filters icon-exclamationMark"></span>
+													<span class="checkbox_value">Не доставленные</span>
+													<div class="float-right">78</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterLang" class="checkbox">
+										<label class="filter-icon_check" for="filterLang"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-languages"></span>
+										<span class="checkbox_value">Язык</span>
+										<div class="float-right">0 / 1</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterLang1" class="checkbox">
+													<label class="filter-icon_check" for="filterLang1"></label>
+													<span class="icons-filters icon-languages"></span>
+													<span class="checkbox_value">русский</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterApps" class="checkbox">
+										<label class="filter-icon_check" for="filterApps"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-apps"></span>
+										<span class="checkbox_value">Приложения</span>
+										<div class="float-right">0 / 1</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterApps1" class="checkbox">
+													<label class="filter-icon_check" for="filterApps1"></label>
+													<span class="icons-filters icon-apps"></span>
+													<span class="checkbox_value">Browser</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterlnfoInText" class="checkbox">
+										<label class="filter-icon_check" for="filterlnfoInText"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-lnfoInText"></span>
+										<span class="checkbox_value">Информация в тексте</span>
+										<div class="float-right">0 / 1</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterlnfoInText1" class="checkbox">
+													<label class="filter-icon_check" for="filterlnfoInText1"></label>
+													<span class="icons-filters icon-lnfoInText"></span>
+													<span class="checkbox_value">Важная</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterContactGroup" class="checkbox">
+										<label class="filter-icon_check" for="filterContactGroup"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-contact"></span>
+										<span class="checkbox_value">Абоненты и группы</span>
+										<div class="float-right">0 / 1</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterContactGroup1" class="checkbox">
+													<label class="filter-icon_check" for="filterContactGroup1"></label>
+													<span class="icons-filters icon-contact"></span>
+													<span class="checkbox_value">Группа1</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterAdditional" class="checkbox">
+										<label class="filter-icon_check" for="filterAdditional"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-additional"></span>
+										<span class="checkbox_value">Дополнительные свойства</span>
+										<div class="float-right">0 / 1</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterAdditional1" class="checkbox">
+													<label class="filter-icon_check" for="filterAdditional1"></label>
+													<span class="icons-filters icon-additional"></span>
+													<span class="checkbox_value">Другие</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterTrash" class="checkbox">
+										<label class="filter-icon_check" for="filterTrash"></label>
+										<span class="icons-filters icon-trash"></span>
+										<span class="checkbox_value">Удаленные данные</span>
+										<div class="float-right">69,736</div>
+									</li>
+									<li class="clearfix">
+										<input type="checkbox" id="filterBook" class="checkbox">
+										<label class="filter-icon_check" for="filterBook"></label>
+										<span class="icon-next"></span>
+										<span class="icons-filters icon-books"></span>
+										<span class="checkbox_value">Словари</span>
+										<div class="float-right">0 / 11</div>
+										<ul>
+											<div class="filter__search">
+												<input type="text" name="" placeholder="Фильтр ..." class="filter__search__input border3radius">
+											</div>
+											<li>
+												<div class="filter__list">
+													<input type="checkbox" id="filterBook1" class="checkbox">
+													<label class="filter-icon_check" for="filterBook1"></label>
+													<span class="icons-filters icon-books"></span>
+													<span class="checkbox_value">англо-русский</span>
+													<div class="float-right">1</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+						</div>
+					</form>
+				</div>		
+				<div class="text-center">
+					<button class="btn btn-filter border3radius">Применить фильтр</button>
+				</div>
+			</div>
+		
+			<div class="col-12 col-sm-8 col-xl-6">
+						<div class="eventList">
+							<div class="row no-gutters">
+								<div class="col-12">
+									<h2 class="eventList__total title">
+										Элементы <span>11,824,220</span>
+									</h2>
+								</div>
+							</div>
+							<div class="row no-gutters eventList__inner border3radius">
+								<div class="col-12">
+									<div class="row no-gutters eventList__headers">
+										<div class="col-5">
+											<div class="eventList__header eventList__header-first">Тип <span class="icons2 icon-diagram"></span></div>
+										</div>
+										<div class="col-4">
+											<div class="eventList__header">Метка времени <span class="icons2 icon-diagram"></span></div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__header">Описание</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row no-gutters eventList__row">
+										<div class="col-5">
+											<span class="round border19radius"></span>
+											<span class="icons2 icon-star"></span>
+											<span class="icons2 icon-bookmark"></span>
+											<span class="eventList__text">Закладка UC Browser</span>
+										</div>
+										<div class="col-4">
+											<div class="clearfix eventList__text">
+												<div class="float-left eventList__data">
+													<p class="eventList__header">Дата</p>
+													<p>1/28/2020</p>
+												</div>
+												<div class="float-left">
+													<p class="eventList__header">Время</p>
+													<p>12:00:00 AM</p>
+													<p>(UTC+03:00)</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-3">
+											<div class="eventList__text">
+													<p class="eventList__header">Описание</p>
+													<p><a href="#" class="link text-dec-none">https://m.lenta.ru/</a></p>
+											</div>
+										</div>
+									</div>
+								</div>						
+							</div>
+							<div class="row no-gutters eventList__footer">
+								<div class="col-12 col-md-4 col-xl-3">
+									<select class="select-show" name="state">
+									  <option>100 на странице</option>
+									  <option>200 на странице</option>
+									  <option>300 на странице</option>
+									</select>
+								</div>
+								<div class="col-12 col-md-8 col-xl-9">
+									<div class="pagination text-right">
+										Всего страниц: 115843
+										<div class="pagination__numbers">
+											<a href="#" class="icons-arrowLeftRight icon-arrow-left"></a>
+											<a href="#" class="text-dec-none selected border3radius">1</a>
+											<a href="#" class="text-dec-none">2</a>
+											<a href="#" class="text-dec-none">3</a>
+											<a href="#" class="text-dec-none">4</a>
+											<a href="#" class="text-dec-none">5</a>
+											<a href="#">...</a>
+											<a href="#" class="icons-arrowLeftRight icon-arrow-right"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			<div class="col-12 col-sm-4 col-xl-3">
+				<div class="metadata">
+					<h3 class="metadata__title">
+						<span class="round border19radius"></span> Android zip(UC<br>Browser_Android_12.13.2.1208.zip)
+					</h3>
+				</div>
+				<div class="metadata border1TopBottom">
+					<div>Метаданные</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Метка времени</div></div>
+						<div class="col-7">
+							<div class="metadata__col">1/28/2020 12:00:00 AM</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Тип</div></div>
+						<div class="col-7">
+							<div class="metadata__col">UC Browser bookmark created</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Направление</div></div>
+						<div class="col-7">
+							<div class="metadata__col">Uncnown</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Created</div></div>
+						<div class="col-7">
+							<div class="metadata__col">51746-09-24 03:56:50</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Устройство</div></div>
+						<div class="col-7">
+							<div class="metadata__col">phone</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Device OS</div></div>
+						<div class="col-7">
+							<div class="metadata__col">android</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Folder</div></div>
+						<div class="col-7">
+							<div class="metadata__col">no</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">Title</div></div>
+						<div class="col-7">
+							<div class="metadata__col">lenta.ru</div>
+						</div>
+					</div>
+					<div class="row metadata__row">
+						<div class="col-5"><div class="eventList__header">URL</div></div>
+						<div class="col-7">
+							<div class="metadata__col">https://m.lenta.ru/</div>
+						</div>
+					</div>
+				</div>
+				<div class="row metadata">
+					<div class="col-12"><span class="icon-edit"></span>note2</div>
+				</div>
+			</div>
+
+		</div>	
+	</div>
+
+
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
