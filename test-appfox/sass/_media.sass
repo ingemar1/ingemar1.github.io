@@ -1,0 +1,526 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+//Large: ≥1200px
+//@media only screen and (max-width: 1440px)
+   
+		
+//Large: ≥992px
+@media only screen and (max-width: 1200px)
+   .header
+      max-width: 1200px
+      &__menu
+         margin: 0 80px 0 80px
+      &__row
+         justify-content: space-between
+   .container
+      max-width: 980px
+   .restaurants
+      &__background
+         height: 552px
+      &__img
+         margin: -198px 0 0 130px
+   
+   .feedback
+      &__form
+         &__input
+            flex: 0 1 22%
+         &__btn
+            flex: 0 1 17%
+
+
+//Medium: ≥768px
+@media only screen and (max-width: 992px)
+   .header
+      max-width: 992px
+      
+      &__menu
+         margin: 0 12px 0 121px
+         &__text
+            display: none
+         li
+            margin-right: 14px
+
+   .d-992-none
+      display: none !important
+   .d-992-flex
+      display: flex !important
+      
+
+   .container
+      max-width: 720px
+   
+   .restaurants
+      &__background
+         height: 467px
+      &__inner
+           padding: 119px 10px 0
+      &__statistics
+            &__col
+               margin-right: 20px
+            &__value
+               font: 600 30px/40px $default-font
+      &__img
+         margin: -103px 0 0 36px
+   
+   .platform
+      margin: 43px auto 20px
+      &__text
+         .h2
+            margin: 0 0 10px
+            font: bold 30px/35px Ubuntu
+
+   .delivery
+      &__background
+         height: 387px
+      &__balls__ball1
+         width: 32px
+         height: 32px
+         top: 10px
+         right: 146px
+      &__balls__ball2, &__balls__ball3
+         display: none
+      &__text
+         padding: 59px 0 0
+         .h3
+            font: bold 26px/35px Ubuntu
+         p
+            margin: 15px 0 0
+
+   .faq
+      &__items
+         .h2
+            margin: 42px 0 20px
+
+   .review
+      margin: 13px auto 0
+      &__img
+         margin: 50px 50px 0 0
+      &__text
+         padding: 72px 0 0 0
+   
+      &__balls
+         &__ball2, &__ball3
+            display: none
+   
+   .feedback
+      &__form
+         flex-direction: column
+         align-items: stretch
+         &__input
+            flex: 0 0 100%
+            margin: 0 0 15px 0
+         &__btn
+            flex: 0 0 100%
+         &__privacy
+            margin-top: 10px
+
+
+
+
+		
+
+//Small: ≥576px
+@media only screen and (max-width: 768px)
+   .header
+      max-width: 768px
+      margin: 0 auto 26px
+      &__background
+         height: 388px
+      &__logo
+         width: 48px
+         height: 48px
+      &__menu
+         margin: 0 0 0 110px
+         li
+            margin-right: 14px
+         &__text
+            display: none
+      &__image
+         margin: -28px auto 0
+         filter: none
+      &__image__phone1
+         display: none
+      &__image__phone2
+         display: block
+      &__socialNetworks
+         top: 181px
+      &__balls
+         &__ball1
+            width: 57px
+            height: 57px
+            right: 281px
+            top: 75px
+         &__ball2
+            width: 62px
+            height: 61px
+            right: 177px
+            top: 110px
+         &__ball3
+            width: 57px
+            height: 58px
+            right: 117px
+            top: 183px
+         &__ball4
+            width: 28px
+            height: 30px
+            right: 199px
+            top: 242px
+         &__ball5
+            width: 58px
+            height: 59px
+            right: 131px
+            top: 290px
+            z-index: 20
+         &__ball6
+            width: 72px
+            height: 74px
+            right: 224px
+            top: 272px
+         &__ball7
+            left: 441px
+            top: 363px
+            img
+               width: 38px
+               height: 38px
+         &__arrow
+            display: none
+         &__ball8
+            width: 67px
+            height: 67px
+            left: 248px
+            top: 342px
+         &__ball9
+            width: 38px
+            height: 38px
+            left: 216px
+            top: 224px
+         &__ball10
+            width: 60px
+            height: 59px
+            left: 166px
+            top: 283px
+            z-index: 20
+         &__ball11
+            width: 32px
+            height: 32px
+            left: 124px
+            top: 222px
+         &__ball12
+            width: 44px
+            height: 44px
+            left: 112px
+            top: 134px
+         &__ball13
+            width: 75px
+            height: 73px
+            left: 189px
+            top: 105px
+         &__ball14
+            width: 58px
+            height: 60px
+            left: 271px
+            top: 61px
+
+
+
+   
+   .container
+      max-width: 540px
+   .download
+      margin: 52px auto 0
+      &__img
+         margin-right: 30px
+         img
+            width: 160px
+      &__links
+         margin: 10px 0 0
+      &__text
+         .h2
+            margin: 30px 0 10px
+            font: bold 16px/19.2px Ubuntu
+         p
+            font: 14px/21px Roboto
+
+   .restaurants
+      &__background
+         height: 330px
+      &__inner
+           padding: 69px 10px 0
+      &__text
+         .h3
+            font: bold 16px/19px Ubuntu
+      &__statistics
+         &__col
+            margin-right: 20px
+         &__value
+            font: 600 16px/19px $default-font
+         p
+            font: 14px/16px $default-font
+      &__balls
+         display: none
+      &__img
+         margin: -59px 0 0 0
+         max-width: 160px
+      &__img1
+         display: none
+      &__img2
+         display: block
+
+   .platform
+      margin: 30px auto 10px
+      flex-wrap: wrap
+      &__text
+         flex: 0 0 100%
+         .h2
+            margin: 0 0 10px
+            font: bold 13px/16px Ubuntu
+         p
+            font: 13px/20px Roboto
+      &__img
+         flex: 0 0 100%
+         margin-left: 0
+
+   .delivery
+      &__background
+         height: 310px
+      &__balls__ball1
+         top: 0
+         right: 146px
+      &__img
+         flex: 0 1 31%
+         background: linear-gradient(180deg, rgba(255, 187, 48, 0) 82.72%, rgba(255, 190, 58, 0.88) 94.69%, #FFBF3D 98.56%)
+         margin: 27px 30px 0 0px
+      &__text
+         flex: 0 1 68%
+         padding: 42px 0 0
+         .h3
+            font: bold 16px/19px Ubuntu
+   
+   .faq
+      &__items
+         flex: 0 0 100%
+         .h2
+            margin: 102px 0 30px
+            font: bold 16px/19px Ubuntu;
+      &__img
+         display: none
+   
+   .review
+      &__background
+         height: 470px
+      &__img
+         display: none
+      &__text
+         padding: 54px 0 0 0
+         flex: 0 0 100%
+         .h3
+            font: bold 16px/16px Ubuntu
+      &__quote
+         em
+            font: italic 14px/21px "Times New Roman"
+         blockquote
+            line-height: 21px
+      &__balls
+         display: none
+   
+
+   .feedback
+      max-width: 410px
+      margin: 41px auto 51px
+      padding: 15px 30px
+      .h3
+         font: bold 16px/16px Ubuntu
+      &__description
+         margin: 10px 0 15px
+      &__form
+         &__privacy
+            font: 12px/14px $default-font
+   
+
+	
+//Extra small: >320
+@media only screen and (max-width: 576px)
+   .header
+      height: 355px
+      max-width: 576px
+      margin: 0 auto 52px
+      &__menu
+         margin: 0 0 0 70px
+      &__logo
+         width: 24px
+         height: 24px
+      &__image
+         margin: 32px auto 0
+      &__balls
+         display: none
+   
+   .container
+      max-width: 424px
+   .d-576-flex
+      display: flex !important
+   .d-576-none
+      display: none
+   
+   .download
+      margin: 0 auto
+      &__links
+         img
+            height: 39px
+   
+   .restaurants
+      margin: 180px auto 0
+      &__background
+         height: 446px
+         width: 100%
+         background: radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%)
+         img
+            display: none
+      &__inner
+         flex-wrap: wrap
+      &__text
+         flex: 0 0 100%
+         order: 2
+         margin: 10px 0 0
+         .h3
+            font: bold 13px/15px Ubuntu
+         p
+            font: 13px/19px $default-font;
+      
+      &__statistics
+         &__value
+            font: 600 13px/15px $default-font
+         p
+            font: 13px/15px $default-font
+
+      &__img
+         flex: 0 0 100%
+         order: 1
+         margin: -211px auto 0
+         background: linear-gradient(180deg, rgba(61, 57, 108, 0) 70.31%, #3D396C 100%)
+
+      &__img2
+         position: relative
+         z-index: -1
+   
+   .platform
+      margin: 139px auto 10px
+      &__img
+         flex: 0 0 60%
+
+   .delivery
+      &__background
+         height: 242px
+         width: 100%
+         background: linear-gradient(180deg, #FFAB00 -182.82%, #FFCD68 -100.25%, #FFAB00 54.78%, #FFAB00 95.73%)
+         img
+            display: none
+      &__balls__ball1
+         display: none
+      &__inner
+         flex-wrap: wrap
+      &__img
+         flex: 0 1 30%
+         width: 126px
+         position: absolute
+         right: 7px
+         top: -118px
+         
+         margin: 0
+         background: linear-gradient(180deg, rgba(255, 178, 23, 0) 82.72%, rgba(255, 177, 20, 0.84) 94.69%, #FFB112 98.56%)
+      &__text
+         flex: 0 1 100%
+         padding: 17px 0 0
+         .h3
+            font: bold 13px/16px Ubuntu
+         p
+            font: 13px/20px $default-font;
+            margin: 10px 0 0
+   
+   .faq
+      &__items
+         .h2
+            margin: 138px 0 30px
+   
+   .review
+      &__background
+         width: 100%
+         background: radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%)
+         img
+            display: none
+
+//Extra small: >0
+@media only screen and (max-width: 320px)
+   .header
+      max-width: 320px
+      margin: 0 auto 0
+      &__background
+         height: 325px
+         background: linear-gradient(180deg, #FFAB00 -182.82%, #FFCD68 -100.25%, #FFAB00 54.78%, #FFAB00 95.73%)
+         width: 100%
+         img
+            display: none
+      &__row
+         justify-content: flex-start
+      &__logo
+          margin: 0 16px 0
+      &__menu
+         margin: 0
+         li
+            margin: 0 17px 0 16px
+      &__socialNetworks
+         top: 102px
+      &__image
+         margin: -32px auto 0
+   
+
+   .download 
+      &__img
+         display: none
+      &__text
+         flex: 0 1 100%
+         .h2
+            margin: 0 0 10px
+            font: bold 13px/16.6px Ubuntu
+         p
+            font: 13px/19.5px Roboto
+
+   .platform
+      margin: 100px auto 10px
+      &__img
+         margin: 7px 0 0
+         flex: 0 0 53%
+   
+   .faq
+      &__items
+         .h2
+            margin: 70px 0 15px
+      &__item
+         &__title
+            font: bold 13px/22px Roboto
+         &__content
+            font: 13px/23px Roboto
+
+   .review
+      &__background
+         height: 450px
+      &__text
+         padding: 30px 0 0
+         p
+            margin: 10px 0
+      &__quote
+         figcaption
+            margin: 7px 0 0
+
+   .feedback
+      box-shadow: none
+      margin: 110px auto 26px
+      padding: 0
+      .h3
+         font: bold 13px/13px Ubuntu
+      &__description
+         font: 13px/20px Roboto
+   
+     
