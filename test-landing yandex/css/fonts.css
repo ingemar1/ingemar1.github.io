@@ -1,0 +1,54 @@
+@font-face {
+  font-family:GolosText;
+  font-weight:400;
+  font-style:normal;
+  src:url(../fonts/GolosTextRegular/golosText-regular.eot);
+  src:url(../fonts/GolosTextRegular/golosText-regular.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/GolosTextRegular/golosText-regular.woff) format("woff"),
+  url(../fonts/GolosTextRegular/golosText-regular.ttf) format("truetype")
+}
+@font-face {
+  font-family:GolosText;
+  font-weight:500;
+  font-style:normal;
+  src:url(../fonts/GolosTextMedium/golosText-medium.eot);
+  src:url(../fonts/GolosTextMedium/golosText-medium.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/GolosTextMedium/golosText-medium.woff) format("woff"),
+  url(../fonts/GolosTextMedium/golosText-medium.ttf) format("truetype")
+}
+@font-face {
+  font-family:GolosText;
+  font-weight:600;
+  font-style:normal;
+  src:url(../fonts/GolosTextSemibold/golosText-semibold.eot);
+  src:url(../fonts/GolosTextSemibold/golosText-semibold.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/GolosTextSemibold/golosText-semibold.woff) format("woff"),
+  url(../fonts/GolosTextSemibold/golosText-semibold.ttf) format("truetype")
+}
+@font-face {
+  font-family:GolosText;
+  font-weight:700;
+  font-style:normal;
+  src:url(../fonts/GolosTextBold/golosText-bold.eot);
+  src:url(../fonts/GolosTextBold/golosText-bold.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/GolosTextBold/golosText-bold.woff) format("woff"),
+  url(../fonts/GolosTextBold/golosText-bold.ttf) format("truetype")
+}
+@font-face {
+  font-family:Merriweather;
+  font-weight:400;
+  font-style:normal;
+  src:url(../fonts/MerriweatherRegular/merriweather-regular.eot);
+  src:url(../fonts/MerriweatherRegular/merriweather-regular.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/MerriweatherRegular/merriweather-regular.woff) format("woff"),
+  url(../fonts/MerriweatherRegular/merriweather-regular.ttf) format("truetype")
+}
+@font-face {
+  font-family:Merriweather;
+  font-weight:700;
+  font-style:normal;
+  src:url(../fonts/MerriweatherBold/merriweather-bold.eot);
+  src:url(../fonts/MerriweatherBold/merriweather-bold.eot?#iefix) format("embedded-opentype"),
+  url(../fonts/MerriweatherBold/merriweather-bold.woff) format("woff"),
+  url(../fonts/MerriweatherBold/merriweather-bold.ttf) format("truetype")
+}

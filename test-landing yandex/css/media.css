@@ -1,0 +1,260 @@
+@media only screen and (max-width:1200px) {
+  .stages__img-wrap {
+    top:0;
+    right:0
+  }
+  .stages__carousel__item:last-child .stages__carousel__description {
+    width:100%
+  }
+}
+@media only screen and (max-width:992px) {
+  .h2 {
+    font:36px/39.6px Merriweather
+  }
+  .header__button-transparent {
+    background:rgba(255,255,255,.9);
+    border:2px solid #fff
+  }
+  .header__button-transparent:hover {
+    border:2px solid #1f1f1f
+  }
+  .stages {
+    margin:120px 0 120px
+  }
+  .stages__link {
+    display:block;
+    max-width:100%;
+    font:18px/21.6px GolosText,sans-serif
+  }
+  .stages__carousel {
+    margin:148px 0 0
+  }
+  .stages__carousel__description {
+    font:500 18px/21.6px GolosText,sans-serif
+  }
+  .participants {
+    margin:0 0 184px
+  }
+  .participants__carousel {
+    margin:31px 0 0
+  }
+  .participants__carousel__description {
+    margin:0 0 20px
+  }
+  .participants__carousel-navigation {
+    top:inherit;
+    bottom:-75px;
+    left:0
+  }
+}
+@media only screen and (max-width:768px) {
+  .lecture {
+    margin:37px 0;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column
+  }
+  .lecture__offset {
+    display:block;
+    margin:300px 0 0
+  }
+  .lecture__colL {
+    -webkit-box-flex:0;
+    -ms-flex:0 1 100%;
+    flex:0 1 100%;
+    padding:0
+  }
+  .lecture__colL img {
+    display:block;
+    margin:15px 0 18px
+  }
+  .lecture__colR {
+    position:absolute;
+    top:157px
+  }
+  .venue {
+    margin:37px 0;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column
+  }
+  .venue__colL {
+    -webkit-box-flex:0;
+    -ms-flex:0 1 100%;
+    flex:0 1 100%
+  }
+  .venue__colR {
+    -webkit-box-flex:0;
+    -ms-flex:0 1 100%;
+    flex:0 1 100%
+  }
+  .stages__carousel__items {
+    -ms-grid-columns:auto auto;
+    grid-template-columns:auto auto
+  }
+  .stages__carousel__item:nth-child(3) {
+    -ms-grid-column-span:2;
+    grid-column:span 2
+  }
+  .stages__carousel__item:nth-child(6) {
+    -ms-grid-column-span:2;
+    grid-column:span 2
+  }
+  .stages__img-wrap {
+    width:335px;
+    height:182px;
+    top:40px;
+    -webkit-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    transform:rotate(-5deg)
+  }
+}
+@media only screen and (max-width:576px) {
+  .title {
+    font:28px/37.8px Merriweather
+  }
+  .header__logo {
+    width:64%;
+    margin:18px 0 26px
+  }
+  .header__title {
+    font:36px/39.6px Merriweather
+  }
+  .header__description {
+    margin:12px 0 0
+  }
+  .header__buttons {
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    margin:32px 0 0
+  }
+  .header__button {
+    padding:18px 20px
+  }
+  .header__button-transparent {
+    margin:14px 0 0
+  }
+  .header__button span {
+    width:100%
+  }
+  .running-line {
+    padding:10px 0
+  }
+  .running-line__item {
+    font:16px/17.6px Merriweather
+  }
+  .lecture__offset {
+    margin:313px 0 0
+  }
+  .venue__table {
+    margin:34px 0 40px
+  }
+  .venue__table__row {
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column
+  }
+  .venue__table__row:first-child .venue__table__col-left {
+    padding:0 0 7px
+  }
+  .venue__table__row:first-child .venue__table__col-right {
+    padding:0 0 14px
+  }
+  .venue__table__row:last-child .venue__table__col-left {
+    padding:12px 0 0
+  }
+  .venue__table__row:last-child .venue__table__col-right {
+    padding:5px 0 0
+  }
+  .venue__table__col-left {
+    -webkit-box-flex:0;
+    -ms-flex:0 1 100%;
+    flex:0 1 100%;
+    padding:12px 0 5px;
+    border:none
+  }
+  .venue__table__col-right {
+    -webkit-box-flex:0;
+    -ms-flex:0 1 100%;
+    flex:0 1 100%;
+    padding:0 0 12px
+  }
+  .venue__link {
+    font:18px/21.6px GolosText,sans-serif
+  }
+  .stages__carousel {
+    max-width:100%;
+    overflow:hidden
+  }
+  .stages__carousel__items {
+    -ms-grid-rows:150px 150px;
+    grid-template-rows:150px 150px;
+    grid-auto-columns:100%;
+    grid-auto-flow:column;
+    grid-row-gap:0;
+    grid-column-gap:20px
+  }
+  .stages__carousel__item {
+    padding:62px 24px 0 20px;
+    background-position:30% 70%
+  }
+  .stages__carousel__item:nth-child(2) {
+    padding:24px 24px 0 20px
+  }
+  .stages__carousel__item:nth-child(3) {
+    -ms-grid-column-span:1;
+    grid-column:span 1
+  }
+  .stages__carousel__item:nth-child(5) {
+    padding:24px 24px 0 20px
+  }
+  .stages__carousel__item:nth-child(6) {
+    -ms-grid-column-span:1;
+    grid-column:span 1;
+    -ms-grid-row-span:2;
+    grid-row:span 2
+  }
+  .stages__carousel__item:last-child {
+    -ms-grid-column-span:1;
+    grid-column:span 1;
+    -ms-grid-row-span:2;
+    grid-row:span 2
+  }
+  .stages__carousel-navigation {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex
+  }
+  .stages__img-wrap {
+    top:115px
+  }
+  .participants__carousel-navigation__btn {
+    width:36px;
+    height:36px
+  }
+  .participants__carousel-navigation__btn svg {
+    width:10px;
+    height:18px
+  }
+  .participants__carousel__items {
+    gap:0
+  }
+}
+@media only screen and (max-width:403px) {
+  .lecture__offset {
+    margin:256px 0 0
+  }
+  .stages__img-wrap {
+    top:176px
+  }
+}
+@media only screen and (max-width:375px) {
+  .header {
+    height:774px
+  }
+}
